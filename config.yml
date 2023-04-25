@@ -1,5 +1,5 @@
 # 起始 URL（换成您自己的域名）
-baseURL: 'https://hugo-start.pages.dev'
+baseURL: 'https://note-site.pages.dev'
 # 网站标题
 title: 'Hugo Note Site'
 # 每页显示的文章数量
@@ -39,14 +39,14 @@ minify:
 params:
   env: production
   # 网站标题
-  title: 'Hugo Start'
+  title: 'Note Site'
   # 网站描述
-  description: 'Hugo Start with PaperMod'
+  description: 'Note Site with Hugo & PaperMod'
   # 网站关键词（大部分搜索引擎已放弃，可注释掉）
   # keywords: [Blog, Portfolio, PaperMod]
 
   # 网站作者
-  author: 'Your Name'
+  author: 'Sail'
   # 多个作者写法
   # author: ["Me", "You"]
 
@@ -66,7 +66,7 @@ params:
   # 是否启用面包屑导航
   ShowBreadCrumbs: true
   # 是否显示代码复制按钮
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   # 是否显示字数统计
   ShowWordCount: true
   # 是否在页面显示 RSS 按钮
@@ -82,9 +82,9 @@ params:
   # 是否隐藏文章摘要
   hideSummary: false
   # 是否显示目录
-  showtoc: false
+  showtoc: true
   # 是否默认展开文章目录
-  tocopen: false
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -94,17 +94,17 @@ params:
     # 可在 https://realfavicongenerator.net/ 生成
     # 将图片复制到 /static 目录下
     # 然后修改下面代码中的文件名
-    favicon: '<link / abs url>'
-    favicon16x16: '<link / abs url>'
-    favicon32x32: '<link / abs url>'
-    apple_touch_icon: '<link / abs url>'
-    safari_pinned_tab: '<link / abs url>'
+    favicon: 'icon.png'
+    favicon16x16: 'icon.png'
+    favicon32x32: 'icon.png'
+    apple_touch_icon: 'icon.png'
+    safari_pinned_tab: 'icon.png'
 
   label:
     # 使用文本替代 Logo 标签
-    text: 'Hugo Start'
+    text: 'Note'
     # 网站 Logo 图片（/static 下面的文件名称）
-    icon: /apple-touch-icon.png
+    icon: ''
     # 图标高度
     iconHeight: 35
 
@@ -126,8 +126,8 @@ params:
 
   # 主页 - 信息模式（默认）
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to hugo start, this is a example of Hugo and PaperMod
+    Title: "Hi there "
+    Content: You're not welcome.
 
   #  主页 - 信息模式 图标展示
   socialIcons:
@@ -135,10 +135,10 @@ params:
     #   url: "https://twitter.com/"
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
-    - name: github
-      url: 'https://github.com/DejavuMoe/hugo-start'
-    - name: mastodon
-      url: 'https://sink.love/@dejavu'
+    # - name: github
+    #   url: 'https://github.com/iIlegalUser/note-site'
+    # - name: mastodon
+    #   url: 'https://sink.love/@dejavu'
 
   # 站长验证
   analytics:
@@ -157,7 +157,7 @@ params:
 
   # 关联编辑
   editPost:
-    URL: 'https://github.com/DejavuMoe/hugo-start/edit/master/content/posts'
+    URL: 'https://github.com/iIlegalUser/note-site/edit/master/content/posts'
     Text: 'Edit on GitHub' # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -189,7 +189,7 @@ menu:
       weight: 20
     - identifier: '仓库'
       name: '仓库'
-      url: https://github.com/DejavuMoe/hugo-start
+      url: https://github.com/iIlegalUser/note-site
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
