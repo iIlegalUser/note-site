@@ -15,10 +15,10 @@ hidemeta: false
 draft: false
 weight:
 cover:
-    image: "cover.webp"
-    alt: "cover"
-    relative: true
-    hidden: true
+  image: "cover.webp"
+  alt: "cover"
+  relative: true
+  hidden: true
 ---
 
 ## 简介
@@ -70,12 +70,12 @@ func TestCrawl(t *testing.T) {
 
 ```go
 type HTMLElement struct {
-  Name string
-  Text string
-  Request *Request
-  Response *Response
-  DOM *goquery.Selection
-  Index int
+	Name			string
+	Text			string
+	Request		*Request
+	Response	*Response
+	DOM				*goquery.Selection
+	Index			int
 }
 ```
 
@@ -116,11 +116,11 @@ type HTMLElement struct {
 
 ```go
 type Hot struct {
-  Rank   string `selector:"a > div.index_1Ew5p"`
-  Name   string `selector:"div.content_1YWBm > a.title_dIF3B"`
-  Author string `selector:"div.content_1YWBm > div.intro_1l0wp:nth-child(2)"`
-  Type   string `selector:"div.content_1YWBm > div.intro_1l0wp:nth-child(3)"`
-  Desc   string `selector:"div.desc_3CTjT"`
+	Rank	 string `selector:"a > div.index_1Ew5p"`
+	Name	 string `selector:"div.content_1YWBm > a.title_dIF3B"`
+	Author string `selector:"div.content_1YWBm > div.intro_1l0wp:nth-child(2)"`
+	Type	 string `selector:"div.content_1YWBm > div.intro_1l0wp:nth-child(3)"`
+	Desc	 string `selector:"div.desc_3CTjT"`
 }
 ```
 
@@ -130,15 +130,15 @@ tag 中是 CSS 选择器语法，添加这个是为了可以直接调用`HTMLEle
 
 ```go
 c.OnHTML("div.category-wrap_iQLoo", func(e *colly.HTMLElement) {
-  hot := &Hot{}
+	hot := &Hot{}
 
-  err := e.Unmarshal(hot)
-  if err != nil {
-    fmt.Println("error:", err)
-    return
-  }
+	err := e.Unmarshal(hot)
+	if err != nil {
+		fmt.Println("error:", err)
+	return
+	}
 
-  hots = append(hots, hot)
+	hots = append(hots, hot)
 })
 ```
 
@@ -148,14 +148,14 @@ c.OnHTML("div.category-wrap_iQLoo", func(e *colly.HTMLElement) {
 
 ```go
 type Novel struct {
-	category   string	// 分类
-	rank       int		// 排名
-	title      string	// 书名
-	author     string	// 作者名
-	words      float64	// 字数/万
-	tags       []string	// 标签
-	url        string	// 链接
-	lastUpdate string	// 上次更新时间
+	category		string	// 分类
+	rank				int		// 排名
+	title 			string	// 书名
+	author			string	// 作者名
+	words 			float64	// 字数/万
+	tags				[]string	// 标签
+	url 				string	// 链接
+	lastUpdate	string	// 上次更新时间
 }
 ```
 
@@ -163,7 +163,7 @@ type Novel struct {
 
 ```go
 func Crawl() {
-    novels := make([]*Novel, 0, 100)
+	novels := make([]*Novel, 0, 100)
 
 	c1 := colly.NewCollector(
 		colly.AllowedDomains("www.qidian.com", "book.qidian.com"),
@@ -181,33 +181,33 @@ func Crawl() {
 
 		// 获取榜单书籍链接
 		c2.OnHTML("div.popular-serial + div li", func(e *colly.HTMLElement) {
-			rank, _ := strconv.Atoi(strings.TrimSpace(e.Attr("data-rid")))
-            // 获取到的是相对链接，转换为 url
-			infoUrl := e.Request.AbsoluteURL(e.ChildAttr("a.link, a.name", "href"))
-			c3 := c1.Clone()
+		rank, _ := strconv.Atoi(strings.TrimSpace(e.Attr("data-rid")))
+			// 获取到的是相对链接，转换为 url
+		infoUrl := e.Request.AbsoluteURL(e.ChildAttr("a.link, a.name", "href"))
+		c3 := c1.Clone()
 
 			// 获取书籍详细信息
 			c3.OnHTML("div.book-info", func(e *colly.HTMLElement) {
 				title := e.ChildText("h1 em")
 				author := e.ChildText("h1 a.writer")
-                // 截取 5 位以后的字符串作为时间
+				// 截取 5 位以后的字符串作为时间
 				lastUpdate := string([]rune(e.ChildText("h1 span.book-update-time"))[5:])
 				tags := make([]string, 0)
 				tags = append(tags, e.ChildText("p.tag > a:nth-child(4)"), e.ChildText("p.tag > a:nth-child(5)"))
-                // 有些书有三个标签
+				// 有些书有三个标签
 				if tag := e.ChildText("p.tag > a:nth-child(6)"); tag != "" {
 					tags = append(tags, tag)
 				}
 				words, _ := strconv.ParseFloat(e.ChildText("p:nth-child(4) > em:nth-child(1)"), 64)
 
 				novel := &Novel{
-					category:   category,
-					rank:       rank,
-					title:      title,
-					author:     author,
-					words:      words,
-					tags:       tags,
-					url:        infoUrl,
+					category:		category,
+					rank: 			rank,
+					title:			title,
+					author: 		author,
+					words:			words,
+					tags: 			tags,
+					url:				infoUrl,
 					lastUpdate: lastUpdate,
 				}
 				//fmt.Println(novel)
@@ -216,10 +216,10 @@ func Crawl() {
 			c3.Visit(infoUrl)
 		})
 		c2.Visit(e.Request.AbsoluteURL(href))
-        //
+		//
 		c2.Wait()
-        // 因为是异步，所以需要等待完成
-        c3.Wait()
+		// 因为是异步，所以需要等待完成
+		c3.Wait()
 	})
 
 	c1.OnError(func(r *colly.Response, err error) {
@@ -237,11 +237,11 @@ func Crawl() {
 
 ```go
 type LimitRule struct {
-  DomainRegexp string
-  DomainGlob string
-  Delay time.Duration
-  RandomDelay time.Duration
-  Parallelism    int
+	DomainRegexp	string
+	DomainGlob		string
+	Delay 				time.Duration
+	RandomDelay		time.Duration
+	Parallelism		int
 }
 ```
 
@@ -249,12 +249,12 @@ type LimitRule struct {
 
 ```go
 err := c.Limit(&colly.LimitRule{
-    DomainRegexp: `unsplash\.com`,
-    RandomDelay:  500 * time.Millisecond,
-    Parallelism:  12,
+	DomainRegexp: `unsplash\.com`,
+	RandomDelay:	500 * time.Millisecond,
+	Parallelism:	12,
 })
 if err != nil {
-    log.Fatal(err)
+	log.Fatal(err)
 }
 ```
 
@@ -266,15 +266,15 @@ if err != nil {
 
 ```go
 c.WithTransport(&http.Transport{
-    Proxy: http.ProxyFromEnvironment,
-    DialContext: (&net.Dialer{
-        Timeout:   30 * time.Second,
-        KeepAlive: 30 * time.Second,
-    }).DialContext,
-    MaxIdleConns:          100,
-    IdleConnTimeout:       90 * time.Second,
-    TLSHandshakeTimeout:   10 * time.Second,
-    ExpectContinueTimeout: 1 * time.Second,
+	Proxy: http.ProxyFromEnvironment,
+	DialContext: (&net.Dialer{
+		Timeout:	 30 * time.Second,
+		KeepAlive: 30 * time.Second,
+	}).DialContext,
+	MaxIdleConns: 					100,
+	IdleConnTimeout:				90 * time.Second,
+	TLSHandshakeTimeout:		10 * time.Second,
+	ExpectContinueTimeout:	1 * time.Second,
 })
 ```
 
@@ -286,8 +286,8 @@ c.WithTransport(&http.Transport{
 import "github.com/gocolly/colly/v2/extensions"
 
 func main() {
-  c := colly.NewCollector()
-  extensions.RandomUserAgent(c)
+	c := colly.NewCollector()
+	extensions.RandomUserAgent(c)
 }
 ```
 
@@ -295,9 +295,9 @@ func main() {
 
 ```go
 func RandomUserAgent(c *colly.Collector) {
-  c.OnRequest(func(r *colly.Request) {
-    r.Headers.Set("User-Agent", uaGens[rand.Intn(len(uaGens))]())
-  })
+	c.OnRequest(func(r *colly.Request) {
+	r.Headers.Set("User-Agent", uaGens[rand.Intn(len(uaGens))]())
+	})
 }
 ```
 
@@ -305,9 +305,9 @@ func RandomUserAgent(c *colly.Collector) {
 
 ```go
 func MyHeader(c *colly.Collector) {
-  c.OnRequest(func(r *colly.Request) {
-    r.Headers.Set("My-Header", "dj")
-  })
+	c.OnRequest(func(r *colly.Request) {
+	r.Headers.Set("My-Header", "dj")
+	})
 }
 ```
 

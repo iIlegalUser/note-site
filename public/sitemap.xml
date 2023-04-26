@@ -3,42 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://note-site.pages.dev/categories/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
-    <loc>https://note-site.pages.dev/tags/daily-lib/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <loc>https://note-site.pages.dev/posts/golang/daily-lib/colly/</loc>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
-    <loc>https://note-site.pages.dev/tags/go/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <loc>https://note-site.pages.dev/series/daily-lib/</loc>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/categories/go/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
-  </url><url>
-    <loc>https://note-site.pages.dev/posts/golang/daily-lib/pie/pie/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/posts/</loc>
-    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://note-site.pages.dev/series/</loc>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/tags/</loc>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://note-site.pages.dev/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2023-04-27T00:42:58+08:00</lastmod>
+  </url><url>
+    <loc>https://note-site.pages.dev/posts/golang/daily-lib/pie/</loc>
     <lastmod>2023-04-25T23:32:27+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/tags/%E9%9B%86%E5%90%88%E8%BF%90%E7%AE%97/</loc>
     <lastmod>2023-04-25T23:32:27+08:00</lastmod>
   </url><url>
-    <loc>https://note-site.pages.dev/series/daily-lib/</loc>
-    <lastmod>2023-04-25T15:23:16+08:00</lastmod>
-  </url><url>
-    <loc>https://note-site.pages.dev/series/</loc>
-    <lastmod>2023-04-25T15:23:16+08:00</lastmod>
-  </url><url>
     <loc>https://note-site.pages.dev/posts/golang/daily-lib/singleflight/</loc>
-    <lastmod>2023-04-25T15:23:16+08:00</lastmod>
+    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/tags/%E7%BC%93%E5%AD%98/</loc>
-    <lastmod>2023-04-25T15:23:16+08:00</lastmod>
+    <lastmod>2023-04-25T23:32:27+08:00</lastmod>
+  </url><url>
+    <loc>https://note-site.pages.dev/archives/</loc>
+  </url><url>
+    <loc>https://note-site.pages.dev/search/</loc>
   </url>
 </urlset>
