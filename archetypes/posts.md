@@ -3,8 +3,11 @@ title: "{{ replace .Name "-" " " | title }}"
 summary: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-categories:
-tags:
+
+categories: []
+series: []
+tags: []
+
 comments: true
 showtoc: true
 searchHidden: false

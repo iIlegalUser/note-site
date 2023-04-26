@@ -1,10 +1,22 @@
 ---
 title: "Singleflight"
+summary: ""
 date: 2023-04-25T15:23:16+08:00
-draft: false
-
-tags: ["go", "singleflight", "缓存"]
+lastmod: 2023-04-25T23:32:27+08:00
 categories: ["go"]
+series: [daily lib]
+tags: ["缓存"]
+comments: true
+showtoc: true
+searchHidden: false
+hidemeta: false
+draft: false
+weight:
+cover:
+    image: "cover.webp"
+    alt: "cover"
+    relative: true
+    hidden: true
 ---
 
 ## 介绍

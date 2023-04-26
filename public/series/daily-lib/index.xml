@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Note</title>
-    <link>https://note-site.pages.dev/</link>
-    <description>Recent content on Note</description>
+    <title>daily lib on Note</title>
+    <link>https://note-site.pages.dev/series/daily-lib/</link>
+    <description>Recent content in daily lib on Note</description>
     <image>
       <title>Note</title>
       <url>https://note-site.pages.dev/opengraph.webp</url>
@@ -11,16 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 25 Apr 2023 23:32:27 +0800</lastBuildDate><atom:link href="https://note-site.pages.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pie</title>
-      <link>https://note-site.pages.dev/posts/golang/daily-lib/pie/pie/</link>
-      <pubDate>Tue, 25 Apr 2023 23:32:27 +0800</pubDate>
-      
-      <guid>https://note-site.pages.dev/posts/golang/daily-lib/pie/pie/</guid>
-      <description>pie 封装了对切片和 map 的常用操作,能满足工作中的大部分需求。比如计算切片的交集、差集；对切片中元素按条件过滤的 Filter 函数；对切片中元素进行数据转换的</description>
-    </item>
-    
+    <lastBuildDate>Tue, 25 Apr 2023 15:23:16 +0800</lastBuildDate><atom:link href="https://note-site.pages.dev/series/daily-lib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Singleflight</title>
       <link>https://note-site.pages.dev/posts/golang/daily-lib/singleflight/</link>

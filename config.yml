@@ -1,7 +1,7 @@
 # 起始 URL（换成您自己的域名）
 baseURL: 'https://note-site.pages.dev'
 # 网站标题
-title: 'Hugo Note Site'
+title: 'Note'
 # 每页显示的文章数量
 paginate: 5
 # 主题名称
@@ -29,17 +29,30 @@ enableGitInfo: false
 # Google Analytics ID
 googleAnalytics: ''
 
+# 分类
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
 # 压缩输出静态文件
 minify:
   # 是否不压缩 XML 文件
   disableXML: true
   minifyOutput: true
 
+# 搜索
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
 # 全局配置
 params:
   env: production
   # 网站标题
-  title: 'Note Site'
+  title: 'Note'
   # 网站描述
   description: 'Note Site with Hugo & PaperMod'
   # 网站关键词（大部分搜索引擎已放弃，可注释掉）
@@ -78,7 +91,7 @@ params:
   # 是否启用评论系统
   comments: false
   # 是否隐藏 Meta 信息
-  hidemeta: false
+  hidemeta: true
   # 是否隐藏文章摘要
   hideSummary: false
   # 是否显示目录
@@ -157,7 +170,7 @@ params:
 
   # 关联编辑
   editPost:
-    URL: 'https://github.com/iIlegalUser/note-site/edit/master/content/posts'
+    URL: 'https://github.com/iIlegalUser/note-site/edit/master/content'
     Text: 'Edit on GitHub' # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -183,6 +196,10 @@ menu:
       name: '分类'
       url: /categories/
       weight: 10
+    - identifier: '系列'
+      name: '系列'
+      url: /series/
+      weight: 10
     - identifier: '标签'
       name: '标签'
       url: /tags/
@@ -195,11 +212,11 @@ menu:
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
+    noClasses: true
+    anchorLineNos: true
+    codeFences: true
     # guessSyntax: true
-    # lineNos: true
+    lineNos: true
     # style: monokai
 
 privacy:
