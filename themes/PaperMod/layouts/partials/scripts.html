@@ -1,0 +1,11 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const codeBlocks = document.querySelectorAll('pre code');
+      const tabSize = 2; // 设置空格数量，您可以根据需要修改这个值
+  
+      codeBlocks.forEach(function (block) {
+        block.innerHTML = block.innerHTML.replace(/\t/g, ' '.repeat(tabSize));
+      });
+    });
+  </script>
+  
