@@ -29,35 +29,35 @@ Spring 接口限流是指在高并发场景下，对接口进行限制访问次�
 
 ### 固定时间窗口算法
 
-固定窗口算法是最基础的限流算法之一，它将时间分成若干个固定的时间窗口，在每个时间窗口内限制请求的数量。这种算法实现简单，但容易出现流量突发的情况。下面是一个使用固定时间窗口限流实现接口限流的示例：
+固定窗口算法是最基础的限流算法之一，它将时间分成若干个固定的时间窗口，在每个时间窗口内限制请求的数量。这种算法实现简单，但容易出现流量突发的情况。下面是一个示例：
 
 ```java
 public class FixedTimeWindowLimiter {
 
-    private final int limit; // 时间窗口内允许通过的请求数
-    private final long windowSize; // 时间窗口大小，单位为毫秒
-    private final LinkedList<Long> timestamps = new LinkedList<>(); // 请求时间戳队列
+  private final int limit; // 时间窗口内允许通过的请求数
+  private final long windowSize; // 时间窗口大小，单位为毫秒
+  private final LinkedList<Long> timestamps = new LinkedList<>(); // 请求时间戳队列
 
-    public FixedTimeWindowLimiter(int limit, long windowSize) {
-        this.limit = limit;
-        this.windowSize = windowSize;
-    }
+  public FixedTimeWindowLimiter(int limit, long windowSize) {
+    this.limit = limit;
+    this.windowSize = windowSize;
+  }
 
-    /**
-     * 判断当前请求是否允许通过
-     */
-    public synchronized boolean tryAcquire() {
-        long currentTimestamp = System.currentTimeMillis();
-        if (timestamps.size() >= limit) { // 如果请求数已达到限制数量
-            long oldestTimestamp = timestamps.getFirst();
-            if (currentTimestamp - oldestTimestamp < windowSize) { // 如果最早的请求还在时间窗口内
-                return false; // 拒绝本次请求
-            }
-            timestamps.removeFirst(); // 移除最早的请求时间戳
-        }
-        timestamps.addLast(currentTimestamp); // 添加当前请求时间戳
-        return true; // 允许本次请求通过
+  /**
+       * 判断当前请求是否允许通过
+       */
+  public synchronized boolean tryAcquire() {
+    long currentTimestamp = System.currentTimeMillis();
+    if (timestamps.size() >= limit) { // 如果请求数已达到限制数量
+      long oldestTimestamp = timestamps.getFirst();
+      if (currentTimestamp - oldestTimestamp < windowSize) { // 如果最早的请求还在时间窗口内
+        return false; // 拒绝本次请求
+      }
+      timestamps.removeFirst(); // 移除最早的请求时间戳
     }
+    timestamps.addLast(currentTimestamp); // 添加当前请求时间戳
+    return true; // 允许本次请求通过
+  }
 }
 ```
 
@@ -70,49 +70,48 @@ private static final FixedTimeWindowLimiter LIMITER = new FixedTimeWindowLimiter
 
 @GetMapping("/hello")
 public String hello() {
-    if (LIMITER.tryAcquire()) {
-        return "Hello World!";
-    } else {
-        return "Too many requests";
-    }
+  if (LIMITER.tryAcquire()) {
+    return "Hello World!";
+  } else {
+    return "Too many requests";
+  }
 }
 ```
 
 ### 滑动时间窗口算法
 
-滑动时间窗口限流是一种更加细粒度的限流算法，其原理是将单位时间划分为若干个时间窗口，并在每个时间窗口内都设置一定的请求次数阈值。下面是一个使用滑动时间窗口限流实现接口限流的示例：
+滑动时间窗口限流是一种更加细粒度的限流算法，其原理是将单位时间划分为若干个时间窗口，并在每个时间窗口内都设置一定的请求次数阈值。下面是一个示例：
 
 ```java
 public class SlidingTimeWindowLimiter {
+  private final int limit; // 每个时间窗口内允许通过的请求数
+  private final long windowSize; // 时间窗口大小，单位为毫秒
+  private final LinkedList<Long> timestamps = new LinkedList<>(); // 请求时间戳队列
 
-    private final int limit; // 每个时间窗口内允许通过的请求数
-    private final long windowSize; // 时间窗口大小，单位为毫秒
-    private final LinkedList<Long> timestamps = new LinkedList<>(); // 请求时间戳队列
+  public SlidingTimeWindowLimiter(int limit, long windowSize) {
+    this.limit = limit;
+    this.windowSize = windowSize;
+  }
 
-    public SlidingTimeWindowLimiter(int limit, long windowSize) {
-        this.limit = limit;
-        this.windowSize = windowSize;
-    }
-
-    /**
+  /**
      * 判断当前请求是否允许通过
      */
-    public synchronized boolean tryAcquire() {
-        long currentTimestamp = System.currentTimeMillis();
-        timestamps.addLast(currentTimestamp); // 添加当前请求时间戳
-        removeObsoleteTimestamps(currentTimestamp); // 移除过期的请求时间戳
-        return timestamps.size() <= limit; // 判断请求数是否超过限制数量
-    }
+  public synchronized boolean tryAcquire() {
+    long currentTimestamp = System.currentTimeMillis();
+    timestamps.addLast(currentTimestamp); // 添加当前请求时间戳
+    removeObsoleteTimestamps(currentTimestamp); // 移除过期的请求时间戳
+    return timestamps.size() <= limit; // 判断请求数是否超过限制数量
+  }
 
-    /**
+  /**
      * 移除过期的请求时间戳
      */
-    private void removeObsoleteTimestamps(long currentTimestamp) {
-        long earliestTimestamp = currentTimestamp - windowSize;
-        while (!timestamps.isEmpty() && timestamps.getFirst() < earliestTimestamp) {
-            timestamps.removeFirst();
-        }
+  private void removeObsoleteTimestamps(long currentTimestamp) {
+    long earliestTimestamp = currentTimestamp - windowSize;
+    while (!timestamps.isEmpty() && timestamps.getFirst() < earliestTimestamp) {
+      timestamps.removeFirst();
     }
+  }
 }
 ```
 
@@ -125,55 +124,55 @@ private static final SlidingTimeWindowLimiter LIMITER = new SlidingTimeWindowLim
 
 @GetMapping("/hello")
 public String hello() {
-    if (LIMITER.tryAcquire()) {
-        return "Hello World!";
-    } else {
-        return "Too many requests";
-    }
+  if (LIMITER.tryAcquire()) {
+    return "Hello World!";
+  } else {
+    return "Too many requests";
+  }
 }
 ```
 
 ### 令牌桶算法
 
-令牌桶算法是一种比较常见的限流算法，它维护了一个固定容量的令牌桶来限制请求的速率。在令牌桶中，每个请求需要消耗一个或多个令牌才能被放行，请求速率超过令牌桶容量时，请求就会被阻塞。下面是一个使用令牌桶限流实现接口限流的示例：
+令牌桶算法是一种比较常见的限流算法，它维护了一个固定容量的令牌桶来限制请求的速率。在令牌桶中，每个请求需要消耗一个或多个令牌才能被放行，请求速率超过令牌桶容量时，请求就会被阻塞。下面是一个示例：
 
 ```java
 public class TokenBucketLimiter {
 
-    private final int capacity; // 令牌桶最大容量
-    private final double rate; // 每秒钟产生的令牌数
-    private double tokens; // 当前令牌数
-    private long lastRefillTime; // 上次添加令牌的时间
+  private final int capacity; // 令牌桶最大容量
+  private final double rate; // 每秒钟产生的令牌数
+  private double tokens; // 当前令牌数
+  private long lastRefillTime; // 上次添加令牌的时间
 
-    public TokenBucketLimiter(int capacity, double rate) {
-        this.capacity = capacity;
-        this.rate = rate;
-        this.tokens = capacity; // 初始化令牌桶为满状态
-        this.lastRefillTime = System.currentTimeMillis(); // 初始化上次添加令牌的时间为当前时间
-    }
+  public TokenBucketLimiter(int capacity, double rate) {
+    this.capacity = capacity;
+    this.rate = rate;
+    this.tokens = capacity; // 初始化令牌桶为满状态
+    this.lastRefillTime = System.currentTimeMillis(); // 初始化上次添加令牌的时间为当前时间
+  }
 
-    /**
+  /**
      * 判断当前请求是否允许通过
      */
-    public synchronized boolean tryAcquire() {
-        refill(); // 先尝试添加令牌
-        if (tokens >= 1) { // 如果有令牌，则减少令牌数
-            tokens -= 1;
-            return true; // 允许本次请求通过
-        } else {
-            return false; // 拒绝本次请求
-        }
+  public synchronized boolean tryAcquire() {
+    refill(); // 先尝试添加令牌
+    if (tokens >= 1) { // 如果有令牌，则减少令牌数
+      tokens -= 1;
+      return true; // 允许本次请求通过
+    } else {
+      return false; // 拒绝本次请求
     }
+  }
 
-    /**
+  /**
      * 添加令牌
      */
-    private void refill() {
-        long now = System.currentTimeMillis();
-        double elapsedTime = (now - lastRefillTime) / 1000.0; // 计算距离上次添加令牌的时间
-        tokens = Math.min(capacity, tokens + elapsedTime * rate); // 添加令牌，不能超过最大容量
-        lastRefillTime = now; // 更新上次添加令牌的时间
-    }
+  private void refill() {
+    long now = System.currentTimeMillis();
+    double elapsedTime = (now - lastRefillTime) / 1000.0; // 计算距离上次添加令牌的时间
+    tokens = Math.min(capacity, tokens + elapsedTime * rate); // 添加令牌，不能超过最大容量
+    lastRefillTime = now; // 更新上次添加令牌的时间
+  }
 }
 ```
 
@@ -189,29 +188,29 @@ public class TokenBucketLimiter {
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class LeakyBucket {
-    private int capacity; // 桶的容量
-    private int rate; // 流出速率（每秒钟流出多少个请求）
-    private AtomicInteger water = new AtomicInteger(0); // 当前桶中的水量
-    private long lastLeakTime = System.currentTimeMillis(); // 上次流出时间
+  private int capacity; // 桶的容量
+  private int rate; // 流出速率（每秒钟流出多少个请求）
+  private AtomicInteger water = new AtomicInteger(0); // 当前桶中的水量
+  private long lastLeakTime = System.currentTimeMillis(); // 上次流出时间
 
-    public LeakyBucket(int capacity, int rate) {
-        this.capacity = capacity;
-        this.rate = rate;
-    }
+  public LeakyBucket(int capacity, int rate) {
+    this.capacity = capacity;
+    this.rate = rate;
+  }
 
-    // 尝试流出一个请求，返回是否成功
-    public synchronized boolean tryRelease() {
-        long now = System.currentTimeMillis();
-        int gap = (int) ((now - lastLeakTime) / 1000) * rate;
-        int available = Math.max(0, water.get() - gap);
-        if (available < capacity) {
-            water.incrementAndGet();
-            lastLeakTime = now;
-            return true;
-        } else {
-            return false;
-        }
+  // 尝试流出一个请求，返回是否成功
+  public synchronized boolean tryRelease() {
+    long now = System.currentTimeMillis();
+    int gap = (int) ((now - lastLeakTime) / 1000) * rate;
+    int available = Math.max(0, water.get() - gap);
+    if (available < capacity) {
+      water.incrementAndGet();
+      lastLeakTime = now;
+      return true;
+    } else {
+      return false;
     }
+  }
 }
 ```
 
@@ -231,7 +230,7 @@ public class LeakyBucket {
 
 3. 借助第三方组件如 Hystrix、guava、Resilience4j 等
 
-### 基于 AOP 实现
+### AOP 实现
 
 首先，定义一个注解 `@RateLimit`，用于标记需要进行限流的方法：
 
@@ -239,7 +238,7 @@ public class LeakyBucket {
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RateLimit {
-    int value() default 10; // 默认每秒钟最多处理 10 个请求
+  int value() default 10; // 默认每秒钟最多处理 10 个请求
 }
 ```
 
@@ -249,43 +248,43 @@ public @interface RateLimit {
 @Component
 @Aspect
 public class RateLimitInterceptor {
-    private Map<String, LeakyBucket> buckets = new ConcurrentHashMap<>();
+  private Map<String, LeakyBucket> buckets = new ConcurrentHashMap<>();
 
-    @Around("@annotation(rateLimit)")
-    public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
-        String key = joinPoint.getSignature().toLongString();
-        LeakyBucket bucket = buckets.computeIfAbsent(key, k -> new LeakyBucket(rateLimit.value(), rateLimit.value()));
-        if (bucket.tryRelease()) {
-            return joinPoint.proceed();
-        } else {
-            throw new RuntimeException("Too many requests");
-        }
+  @Around("@annotation(rateLimit)")
+  public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
+    String key = joinPoint.getSignature().toLongString();
+    LeakyBucket bucket = buckets.computeIfAbsent(key, k -> new LeakyBucket(rateLimit.value(), rateLimit.value()));
+    if (bucket.tryRelease()) {
+      return joinPoint.proceed();
+    } else {
+      throw new RuntimeException("Too many requests");
+    }
+  }
+
+  private static class LeakyBucket {
+    private final int capacity;
+    private final int rate;
+    private volatile int water = 0;
+    private volatile long lastLeakTime = System.nanoTime();
+
+    public LeakyBucket(int capacity, int rate) {
+      this.capacity = capacity;
+      this.rate = rate;
     }
 
-    private static class LeakyBucket {
-        private final int capacity;
-        private final int rate;
-        private volatile int water = 0;
-        private volatile long lastLeakTime = System.nanoTime();
-
-        public LeakyBucket(int capacity, int rate) {
-            this.capacity = capacity;
-            this.rate = rate;
-        }
-
-        public boolean tryRelease() {
-            long now = System.nanoTime();
-            int gap = (int) TimeUnit.MILLISECONDS.toSeconds(now - lastLeakTime) * rate;
-            int available = Math.max(0, water - gap);
-            if (available < capacity) {
-                water++;
-                lastLeakTime = now;
-                return true;
-            } else {
-                return false;
-            }
-        }
+    public boolean tryRelease() {
+      long now = System.nanoTime();
+      int gap = (int) TimeUnit.MILLISECONDS.toSeconds(now - lastLeakTime) * rate;
+      int available = Math.max(0, water - gap);
+      if (available < capacity) {
+        water++;
+        lastLeakTime = now;
+        return true;
+      } else {
+        return false;
+      }
     }
+  }
 }
 ```
 
@@ -298,15 +297,15 @@ public class RateLimitInterceptor {
 ```java
 @RestController
 public class MyController {
-    @GetMapping("/hello")
-    @RateLimit(value = 5)
-    public String hello() {
-        return "Hello world";
-    }
+  @GetMapping("/hello")
+  @RateLimit(value = 5)
+  public String hello() {
+    return "Hello world";
+  }
 }
 ```
 
-### 基于 Redis 实现限流
+### Redis 实现
 
 首先，定义一个注解 `@RateLimit`，用于标记需要进行限流的方法。注解定义和基于 AOP 实现中的一致。接着，我们可以定义一个切面类 `RateLimitInterceptor`，使用不同框架实现限流逻辑：
 
@@ -316,23 +315,23 @@ public class MyController {
 @Component
 @Aspect
 public class RateLimitInterceptor {
-    @Autowired
-    private StringRedisTemplate redisTemplate;
+  @Autowired
+  private StringRedisTemplate redisTemplate;
 
-    @Around("@annotation(rateLimit)")
-    public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
-        String methodName = joinPoint.getSignature().toLongString();
-        String key = "rate_limit:" + methodName;
-        Long count = redisTemplate.opsForValue().increment(key, 1);
-        if (count == 1) {
-            redisTemplate.expire(key, 1, TimeUnit.SECONDS);
-        }
-        if (count > rateLimit.value()) {
-            throw new RuntimeException("Too many requests");
-        } else {
-            return joinPoint.proceed();
-        }
+  @Around("@annotation(rateLimit)")
+  public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
+    String methodName = joinPoint.getSignature().toLongString();
+    String key = "rate_limit:" + methodName;
+    Long count = redisTemplate.opsForValue().increment(key, 1);
+    if (count == 1) {
+      redisTemplate.expire(key, 1, TimeUnit.SECONDS);
     }
+    if (count > rateLimit.value()) {
+      throw new RuntimeException("Too many requests");
+    } else {
+      return joinPoint.proceed();
+    }
+  }
 }
 ```
 
@@ -345,86 +344,42 @@ public class RateLimitInterceptor {
 @Aspect
 @RequiredArgsConstructor
 public class RateLimitInterceptor {
-    private final RedissonClient redissonClient;
+  private final RedissonClient redissonClient;
 
-    @Around("@annotation(rateLimit)")
-    public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
-        String methodName = joinPoint.getSignature().toLongString();
-        RRateLimiter limiter = redissonClient.getRateLimiter(methodName);
-        limiter.trySetRate(RateType.OVERALL, rateLimit.value(), 1, RateIntervalUnit.SECONDS);
-        if (limiter.tryAcquire()) {
-            return joinPoint.proceed();
-        } else {
-            throw new RuntimeException("Too many requests");
-        }
+  @Around("@annotation(rateLimit)")
+  public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
+    String methodName = joinPoint.getSignature().toLongString();
+    RRateLimiter limiter = redissonClient.getRateLimiter(methodName);
+    limiter.trySetRate(RateType.OVERALL, rateLimit.value(), 1, RateIntervalUnit.SECONDS);
+    if (limiter.tryAcquire()) {
+      return joinPoint.proceed();
+    } else {
+      throw new RuntimeException("Too many requests");
     }
+  }
 }
 ```
 
 在上面的代码中，我们使用 `RedissonClient` 类访问 Redis 存储，并从中获取一个 RateLimiter 对象。在 `limit` 方法中，我们首先根据当前方法签名生成一个唯一键值，并将其作为 Redisson 的 key 值。然后，我们使用 `trySetRate()` 方法设置该限流器的速率，并使用 `tryAcquire()` 方法尝试获取令牌。如果获取令牌成功，则调用原始方法并返回结果；否则抛出异常。
 
-### 基于 Hystrix 实现限流
-
-Hystrix 是 Netflix 开源的一款用于处理分布式系统的隔离和容错的组件。它可以实现服务降级、断路器、线程池隔离、请求缓存等功能，帮助我们提高系统的可靠性和弹性。
-
-只需要修改 RateLimitInterceptor 代码
-
-```java
-@Component
-@Aspect
-public class RateLimitInterceptor {
-    @Around("@annotation(rateLimit)")
-    @HystrixCommand(fallbackMethod = "handleFallback", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
-    })
-    public Object limit(ProceedingJoinPoint joinPoint, RateLimit rateLimit) throws Throwable {
-        String methodName = joinPoint.getSignature().toLongString();
-        int count = RateLimiter.tryAcquire(methodName, rateLimit.value());
-        if (count > rateLimit.value()) {
-            throw new RuntimeException("Too many requests");
-        } else {
-            return joinPoint.proceed();
-        }
-    }
-
-    public Object handleFallback(ProceedingJoinPoint joinPoint, RateLimit rateLimit, Throwable e) throws Throwable {
-        return "Fallback message";
-    }
-}
-```
-
-在上面的代码中，我们在 `limit()` 方法上使用了 `@HystrixCommand` 注解，并设置了超时时间和降级方法。如果在 `rateLimit` 毫秒内无法得到响应，则会触发降级方法 `handleFallback()`。
-
-`@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")` 注解相当于在 Spring Boot 的配置文件中添加以下配置：
-
-```yml
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 500 # 超时时间10秒
-```
-
-### 基于 Guava 实现限流
+### Guava 实现
 
 Guava 是 Google 开源的一款 Java 工具库，其中包含了 RateLimiter 类，可以用于实现限流功能。通过创建一个全局的 RateLimiter 对象，并在接口方法中调用 acquire 方法进行令牌桶的获取，即可实现限流。例如：
 
 ```java
 private static final RateLimiter LIMITER = RateLimiter.create(10.0);
 
-    @GetMapping("/hello")
-    public String hello() {
-        if (LIMITER.tryAcquire()) {
-            return "Hello World!";
-        } else {
-            return "Too many requests";
-        }
-    }
+@GetMapping("/hello")
+public String hello() {
+  if (LIMITER.tryAcquire()) {
+    return "Hello World!";
+  } else {
+    return "Too many requests";
+  }
+}
 ```
 
-### 基于 Resilience4j 框架实现限流
+### Resilience4j 实现
 
 Resilience4j 是一个轻量级的容错框架，可以用于实现各种模式，如熔断、限流、重试等。
 
@@ -458,12 +413,72 @@ resilience4j:
 @GetMapping("/hello")
 @RateLimiter(name = "myRateLimiter")
 public String hello() {
-    return "Hello World!";
+  return "Hello World!";
 }
 ```
 
 在此示例中，我们使用 `@RateLimiter` 注解将 `hello()` 方法标记为受 `myRateLimiter` 限制。
 
+### spring-cloud-gateway 实现
+
+Spring Cloud Gateway 自带的限流实际上是通过 redis 实现的，其实现方式在` spring-cloud-gateway-server/META-INF/scripts/request_rate_limiter.lua`。
+
+spring-cloud-gateway 有两种配置方式，第一种是通过配置文件，下面是一个示例：
+
+```yml
+# application.yml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: my_route
+          uri: http://example.org
+          filters:
+            - name: RequestRateLimiter
+              args:
+                key-resolver: "#{@ipKeyResolver}"
+                redis-rate-limiter.replenishRate: 1			# 令牌填充速度(个/s)
+                redis-rate-limiter.burstCapacity: 2			# 令牌桶的大小
+                redis-rate-limiter.requestedTokens: 1		# 每次请求获取令牌个数
+```
+
+其中，`key-resolver` 使用 SpEL 表达式 `#{@beanName}` 从 Spring 容器中获取 `hostAddrKeyResolver` 对象。它的实现如下：
+
+```java
+@Configuration
+public class KeyResolveConfiguration {
+
+  // 根据访问 ip 限流
+  @Bean(name = "ipKeyResolver")
+  public KeyResolver ipKeyResolver() {
+    return exchange -> Mono.just(Objects.requireNonNull(exchange.getRequest().getRemoteAddress()).getHostName());
+  }
+}
+```
+
+第二种方式是通过下面的代码来配置：
+
+```java
+@Bean
+public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+  return builder.routes()
+    .route(p -> p
+           .path("/service/**")
+           .filters(filter -> filter.requestRateLimiter()
+                    .rateLimiter(RedisRateLimiter.class, rl -> rl
+                                 .setBurstCapacity(3)
+                                 .setReplenishRate(1)
+                                 .setRequestedTokens(1))
+                    .and())
+           .uri("lb://service"))
+    .build();
+}
+```
+
+这样就可以对某个 route 进行限流了。但是这里有一点要注意，replenishRate 不支持设置小数，也就是说往桶中填充的 token 的速度最少为每秒 1 个，所以，如果限流规则是每分钟 10 个请求（按理说应该每 6 秒填充一次，或每秒填充 1/6 个 token），这种情况 Spring Cloud Gateway 就没法正确的限流。
+
 ## 参考
+
+[Spring Cloud Gateway 之限流篇](https://mp.weixin.qq.com/s?__biz=MzI4NjE4NTUwNQ==&mid=2247494915&idx=5&sn=e30db209b5af1b5e760a3a4f2f2b7e12) 
 
 ChatGPT 3.5
