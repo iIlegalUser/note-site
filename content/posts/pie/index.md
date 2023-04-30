@@ -12,7 +12,7 @@ searchHidden: false
 hidemeta: false
 draft: false
 cover:
-    image: "cover.jpg"
+    image: "009.png"
     alt: "cover"
     relative: true
     hidden: true
