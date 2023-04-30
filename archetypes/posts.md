@@ -14,6 +14,5 @@ cover:
     image: "cover.webp"
     alt: "cover"
     relative: true
-    hidden: true
 ---
 
