@@ -8,14 +8,11 @@ categories: ["go"]
 series: ["daily lib"]
 tags: ["集合运算"]
 
-comments: true
-showtoc: true
 searchHidden: false
 hidemeta: false
 draft: false
-weight:
 cover:
-    image: "cover.webp"
+    image: "cover.jpg"
     alt: "cover"
     relative: true
     hidden: true

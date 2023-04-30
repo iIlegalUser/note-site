@@ -54,7 +54,7 @@ params:
   # 网站标题
   title: 'Note'
   # 网站描述
-  description: 'Note Site with Hugo & PaperMod'
+  # description: 'Note Site with Hugo & PaperMod'
   # 网站关键词（大部分搜索引擎已放弃，可注释掉）
   # keywords: [Blog, Portfolio, PaperMod]
 
@@ -67,6 +67,8 @@ params:
   images: ['opengraph.webp']
   # 日期格式
   DateFormat: '2006-01-02'
+  # 显示文章更新时间
+  ShowLastMod: true 
   # 默认主题
   defaultTheme: auto # dark, light
   # 是否启用主题切换按钮
@@ -91,13 +93,13 @@ params:
   # 是否启用评论系统
   comments: false
   # 是否隐藏 Meta 信息
-  hidemeta: true
+  hidemeta: false
   # 是否隐藏文章摘要
   hideSummary: false
   # 是否显示目录
   showtoc: true
   # 是否默认展开文章目录
-  tocopen: true
+  tocopen: false
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -165,7 +167,7 @@ params:
   # 文章封面设置
   cover:
     hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
+    hiddenInList: false # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
   # 关联编辑
@@ -204,9 +206,13 @@ menu:
       name: '标签'
       url: /tags/
       weight: 20
-    - identifier: '仓库'
-      name: '仓库'
-      url: https://github.com/iIlegalUser/note-site
+    - identifier: '归档'
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: '搜索'
+      name: 搜索
+      url: /search/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
@@ -215,7 +221,7 @@ markup:
     noClasses: true
     anchorLineNos: true
     codeFences: true
-    # guessSyntax: true
+    guessSyntax: true
     lineNos: true
     # style: monokai
 

@@ -1,21 +1,17 @@
 ---
 title: "Homedir"
-summary: ""
 date: 2023-04-27T22:09:11+08:00
-lastmod: 2023-04-27T22:09:11+08:00
+lastmod: 2023-04-30T14:30:11+08:00
 
 categories: ["go"]
 series: ["daily-lib"]
 tags: []
 
-comments: true
-showtoc: true
 searchHidden: false
 hidemeta: false
 draft: false
-weight:
 cover:
-    image: "cover.webp"
+    image: "cover.jpg"
     alt: "cover"
     relative: true
     hidden: true

@@ -1,6 +1,5 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-summary: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 
@@ -8,12 +7,9 @@ categories: []
 series: []
 tags: []
 
-comments: true
-showtoc: true
 searchHidden: false
 hidemeta: false
 draft: false
-weight:
 cover:
     image: "cover.webp"
     alt: "cover"

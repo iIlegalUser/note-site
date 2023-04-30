@@ -1,6 +1,5 @@
 ---
 title: "Colly"
-summary: ""
 date: 2023-04-27T00:42:58+08:00
 lastmod: 2023-04-27T00:42:58+08:00
 
@@ -9,16 +8,13 @@ series: ["daily-lib"]
 tags: ["爬虫"]
 
 comments: true
-showtoc: true
 searchHidden: false
 hidemeta: false
 draft: false
-weight:
 cover:
-  image: "cover.webp"
+  image: "cover.jpg"
   alt: "cover"
   relative: true
-  hidden: true
 ---
 
 ## 简介
