@@ -17,8 +17,6 @@ cover:
     hidden: true
 ---
 
-## 介绍
-
 homedir 是一个不借助 cgo 获取用户目录的 go 库。
 
 使用 go 内置的 `os/user` 也可以获取用户目录，但是在 Darwin 系统中需要使用 cgo，这意味着任何使用了 `os/user` 的 go 代码都不能交叉编译。但是大多数时候使用 `os/user` 都只是为了获取用户目录。

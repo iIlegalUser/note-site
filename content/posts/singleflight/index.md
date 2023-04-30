@@ -17,8 +17,6 @@ cover:
     hidden: true
 ---
 
-## 介绍
-
 `singleflight` 来源于准官方库 `golang.org/x/sync/singleflight`，能够抑制对下游的多次重复请求。主要提供了以下三个方法：
 
 ```go

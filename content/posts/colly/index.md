@@ -17,8 +17,6 @@ cover:
   relative: true
 ---
 
-## 简介
-
 [`colly`](https://github.com/gocolly/colly) 是用 Go 语言编写的功能强大的爬虫框架。它提供简洁的 API，拥有强劲的性能，可以自动处理 cookie&session，还有提供灵活的扩展机制。
 
 ## 快速使用
