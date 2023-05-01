@@ -2,7 +2,7 @@
 title: "原型模式"
 date: 2023-05-01T00:19:00+08:00
 
-categories: ["设计模式"]
+categories: [设计模式]
 series: []
 tags: ["设计模式"]
 

@@ -3,7 +3,7 @@ title: "单例模式"
 date: 2023-05-02T00:19:42+08:00
 lastmod: 2023-05-02T00:19:42+08:00
 
-categories: [“设计模式"]
+categories: [设计模式]
 series: []
 tags: ["设计模式"]
 
