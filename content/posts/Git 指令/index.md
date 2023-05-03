@@ -314,3 +314,6 @@ git cherry-pick <commit>
 git reflog
 ```
 
+## 参考
+
+[Git 版本控制学习笔记（二）](https://dejavu.moe/posts/git-note-2/) 
