@@ -218,12 +218,12 @@ menu:
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: true
-    anchorLineNos: true
+    # noClasses: false
+    # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: true
-    # style: monokai
+    # lineNos: true
+    style: monokailight
 
 privacy:
   vimeo:
