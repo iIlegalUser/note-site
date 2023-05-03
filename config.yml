@@ -72,14 +72,14 @@ params:
   # 默认主题
   defaultTheme: auto # dark, light
   # 是否启用主题切换按钮
-  disableThemeToggle: false
+  disableThemeToggle: true
   # 是否启用阅读时间展示
   ShowReadingTime: true
   # 是都启用分享按钮
   ShowShareButtons: true
   ShowPostNavLinks: true
   # 是否启用面包屑导航
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   # 是否显示代码复制按钮
   ShowCodeCopyButtons: true
   # 是否显示字数统计
