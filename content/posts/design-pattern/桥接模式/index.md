@@ -22,7 +22,7 @@ Bridge Pattern: Decouple an abstraction from its implementation so that the two 
 
 桥接模式是一种结构型设计模式，它将抽象与实现解耦，使得两者可以独立地变化。这种模式涉及到一个抽象类，它将实现类的对象作为一个成员变量，并通过构造函数或者 setter 方法将实现类的对象传递给抽象类。这样，抽象类可以在运行时调用实现类的方法，而不需要知道具体的实现细节。
 
-## 桥接模式结构
+## 结构
 
 桥接模式包含以下 4 个角色：
 

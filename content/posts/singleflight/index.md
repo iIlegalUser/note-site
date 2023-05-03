@@ -1,20 +1,15 @@
 ---
 title: "Singleflight"
 date: 2023-04-25T15:23:16+08:00
-lastmod: 2023-04-25T23:32:27+08:00
 
 categories: ["go"]
 series: [daily lib]
 tags: ["缓存"]
 
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
     image: "cover.png"
     alt: "cover"
     relative: true
-    hidden: true
 ---
 
 `singleflight` 来源于准官方库 `golang.org/x/sync/singleflight`，能够抑制对下游的多次重复请求。主要提供了以下三个方法：

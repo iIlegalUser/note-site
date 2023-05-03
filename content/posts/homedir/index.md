@@ -1,20 +1,15 @@
 ---
 title: "Homedir"
 date: 2023-04-27T22:09:11+08:00
-lastmod: 2023-04-30T14:30:11+08:00
 
 categories: ["go"]
 series: ["daily-lib"]
 tags: []
 
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
     image: "008.jpg"
     alt: "cover"
     relative: true
-    hidden: true
 ---
 
 homedir 是一个不借助 cgo 获取用户目录的 go 库。

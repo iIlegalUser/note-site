@@ -1,20 +1,15 @@
 ---
 title: "Spring 接口限流"
 date: 2023-04-28T21:10:56+08:00
-lastmod: 2023-04-28T21:10:56+08:00
 
 categories: ["spring"]
 series: []
 tags: ["限流"]
 
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
     image: "cover.jpg"
     alt: "cover"
     relative: true
-    hidden: true
 ---
 
 Spring 接口限流是指在高并发场景下，对接口进行限制访问次数的一种技术手段。通过限制接口的访问速度和频率，可以保护系统不受到突发流量的冲击，防止系统崩溃或者性能下降。

@@ -1,15 +1,11 @@
 ---
 title: "Git 指令"
 date: 2023-05-02T22:13:26+08:00
-lastmod: 2023-05-02T22:13:26+08:00
 
 categories: [git]
 series: []
 tags: [git]
 
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
     image: "013.png"
     alt: "cover"

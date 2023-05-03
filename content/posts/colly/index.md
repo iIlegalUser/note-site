@@ -1,16 +1,11 @@
 ---
 title: "Colly"
 date: 2023-04-27T00:42:58+08:00
-lastmod: 2023-04-27T00:42:58+08:00
 
 categories: ["go"]
 series: ["daily-lib"]
 tags: ["爬虫"]
 
-comments: true
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
   image: "cover.jpg"
   alt: "cover"

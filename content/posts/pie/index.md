@@ -1,21 +1,15 @@
 ---
 title: "Pie"
-summary: ""
 date: 2023-04-25T23:32:27+08:00
-lastmod: 2023-04-25T23:32:27+08:00
 
 categories: ["go"]
 series: ["daily lib"]
 tags: ["集合运算"]
 
-searchHidden: false
-hidemeta: false
-draft: false
 cover:
     image: "009.png"
     alt: "cover"
     relative: true
-    hidden: true
 ---
 
 [pie](https://github.com/elliotchance/pie) 封装了**对切片和 map 的常用操作,能满足工作中的大部分需求**。比如计算切片的交集、差集；对切片中元素按条件过滤的 Filter 函数；对切片中元素进行数据转换的 Each、Map 函数等。
