@@ -12,6 +12,7 @@ cover:
     relative: true
 ---
 
+
 Facade Pattern: Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
 外观模式：为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口， 这个接口使得这一子系统更加容易使用。
@@ -113,6 +114,8 @@ public class Client {
 
 （3）在层次化结构中可以使用外观模式定义系统中每一层的入口，层与层之间不直接产生联系，而通过外观类建立联系，降低层之间的耦合度。
 
+
 ## 参考
 
 《Java 设计模式》．刘伟．清华大学出版社
+
