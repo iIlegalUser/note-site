@@ -7,7 +7,7 @@ series: []
 tags: ["Windows", "CLI"]
 
 cover:
-    image: "015.png"
+    image: "015.webp"
     alt: "cover"
     relative: true
 ---

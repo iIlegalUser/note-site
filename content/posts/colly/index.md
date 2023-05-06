@@ -7,7 +7,7 @@ series: ["daily-lib"]
 tags: ["爬虫"]
 
 cover:
-  image: "cover.jpg"
+  image: "cover.webp"
   alt: "cover"
   relative: true
 ---
