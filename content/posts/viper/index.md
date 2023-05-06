@@ -7,7 +7,7 @@ series: ["daily-lib"]
 tags: ["配置"]
 
 cover:
-    image: "006.jpg"
+    image: "006.webp"
     alt: "cover"
     relative: true
 ---

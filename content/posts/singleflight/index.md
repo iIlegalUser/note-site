@@ -7,7 +7,7 @@ series: [daily lib]
 tags: ["缓存"]
 
 cover:
-    image: "cover.png"
+    image: "cover.webp"
     alt: "cover"
     relative: true
 ---

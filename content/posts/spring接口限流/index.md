@@ -7,7 +7,7 @@ series: []
 tags: ["限流"]
 
 cover:
-    image: "cover.jpg"
+    image: "cover.webp"
     alt: "cover"
     relative: true
 ---

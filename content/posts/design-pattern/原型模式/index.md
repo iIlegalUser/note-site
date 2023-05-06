@@ -10,7 +10,7 @@ searchHidden: false
 hidemeta: false
 draft: false
 cover:
-    image: "007.jpg"
+    image: "007.webp"
     alt: "cover"
     relative: true
 ---

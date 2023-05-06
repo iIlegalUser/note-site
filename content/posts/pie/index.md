@@ -7,7 +7,7 @@ series: ["daily lib"]
 tags: ["集合运算"]
 
 cover:
-    image: "009.png"
+    image: "009.webp"
     alt: "cover"
     relative: true
 ---

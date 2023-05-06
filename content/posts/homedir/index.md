@@ -7,7 +7,7 @@ series: ["daily-lib"]
 tags: []
 
 cover:
-    image: "008.jpg"
+    image: "008.webp"
     alt: "cover"
     relative: true
 ---
