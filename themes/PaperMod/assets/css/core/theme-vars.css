@@ -19,13 +19,16 @@
 
 .dark {
     --theme: rgb(29, 30, 32);
+    /* --theme: #3c4456; */
     --entry: rgb(46, 46, 51);
+    /* --entry: #323442; */
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
     --content: rgb(196, 196, 197);
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
+    /* --code-bg: #313742; */
     --border: rgb(51, 51, 51);
 }
 
