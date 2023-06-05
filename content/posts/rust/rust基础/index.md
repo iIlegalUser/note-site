@@ -35,7 +35,6 @@ fn main() {
 fn main() {
   let s1: str = "hello ";
   let s1: String = String::from("world");
-  
 }
 ```
 

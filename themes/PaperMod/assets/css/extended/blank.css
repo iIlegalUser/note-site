@@ -166,6 +166,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 /* 悬停放大阴影效果 */
+.post-entry {
+    transition: all 0.4s;
+}
 .post-entry:hover {
     transform: scale(1.03);
     box-shadow: 5px 5px 20px 5px #dfdfdf;
