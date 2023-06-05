@@ -1,14 +1,14 @@
 ---
-title: "Rust基础"
-date: 2023-06-03T12:10:45+08:00
+title: "Rust数据类型"
+date: 2023-06-03 12:10:45
 
 categories: [rust]
 series: []
 tags: []
-draft: true
+draft: false
 
 cover:
-    image: "cover.webp"
+    image: "030.webp"
     alt: "cover"
     relative: true
 ---
@@ -35,7 +35,6 @@ fn main() {
 fn main() {
   let s1: str = "hello ";
   let s1: String = String::from("world");
-  
 }
 ```
 
@@ -52,7 +51,7 @@ fn main() {
   // println!("{}", s1);
 }
 
-// + 调用的是 std::string 中的 add 方法，其定义为：
+// + 调用的实际上是 std::string 中的 add 方法，其定义为：
 fn add(self, s: &str) -> String
 ```
 
@@ -86,7 +85,7 @@ fn main() {
 fn main() {
   let s1 = String::from("hello");
   let (len, s2) = calc_len(s1);
-  println!("len of \"{}\" is {}", s2, len);
+  println!("len of \"{}\" is {}", s2, len);	// len of "hello" is 5
 }
 
 // 返回元组
@@ -298,3 +297,22 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 ```
 
 ## 数组
+
+1. 创建数组
+
+```rust
+fn main() {
+  let arr = [1,2,3];	// 自动推导数组类型
+  let repeat_arr: [i32; 5] = [3;5];	// 创建包含重复元素的数组
+  println!("{:?}", arr);  // [3, 3, 3, 3, 3]
+}
+```
+
+2. 数组元素为非基本类型
+
+```rust
+// err,因为 String 没有实现 copy trait
+let array = [String::from("rust is good!"); 8];
+// 正确写法
+let array: [String; 8] = std::array::from_fn(|i| String::from("hello"));
+```
