@@ -7,7 +7,7 @@ series: []
 tags: []
 
 cover:
-    image: "cover.webp"
+    image: "029.webp"
     alt: "cover"
     relative: true
 ---
