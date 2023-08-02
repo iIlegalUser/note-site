@@ -5,6 +5,8 @@ date: {{ .Date }}
 categories: []
 series: []
 tags: []
+math: false
+draft: true
 
 cover:
     image: "cover.webp"
