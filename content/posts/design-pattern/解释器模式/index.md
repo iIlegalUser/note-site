@@ -6,7 +6,7 @@ categories: [设计模式]
 series: []
 tags: [设计模式]
 math: false
-draft: true
+draft: false
 
 cover:
     image: "027.webp"
