@@ -101,3 +101,9 @@ public int select(int[] arr, int k) {
 ```
 
 此算法的时间复杂度为 $O(NlogK)$，空间复杂度为 $O(K)$。
+
+## 参考
+
+[1] [Top K 问题的最优解 - 快速选择算法（Quickselect）](https://zhuanlan.zhihu.com/p/64627590) 
+
+[2] [快速排序](https://www.cnblogs.com/skywang12345/p/3596746.html) 
