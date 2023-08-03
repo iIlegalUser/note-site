@@ -58,6 +58,10 @@ public class Singleton {
 }
 ```
 
+优点：在类加载时初始化，通过类加载机制实现线程安全。
+
+缺点：触发类加载的原因有多种，可能无法在调用`getInstance()`方法时才进行类加载，进而无法实现懒加载。如果实例长时间不使用，可能造成资源浪费。
+
 ### 2. 懒汉式（线程不安全）
 
 ```java
@@ -92,10 +96,15 @@ public class Singleton {
 }
 ```
 
+优点：第一次调用才进行初始化，避免内存浪费
+
+缺点：需要加锁才能保证单例，但加锁会影响效率
+
 ### 4. 双重检查（Double Check Lock，DCL）
 
 ```java
 public class Singleton {
+  // 注意要用volatile修饰阻止指令重排序
   private static volatile Singleton instance;
 
   private Singleton() {}
@@ -113,6 +122,10 @@ public class Singleton {
 }
 ```
 
+优点：相比懒汉式只会在实例不存在时加锁，提高了效率。
+
+缺点：第一次加载稍慢，也由于 Java 内存模型的原因偶尔会失败。在高并发环境也有一定的缺陷，虽然发生的概率很小。
+
 ### 5. IoDH（静态内部类）
 
 ```java
@@ -129,6 +142,10 @@ public class Singleton {
 }
 ```
 
+优点：在调用`getInstance()`方法时才进行加载，达到了懒汉式的效果，并且是线程安全的。
+
+缺点：写法复杂
+
 ### 6. 枚举
 
 ```java
@@ -141,3 +158,10 @@ public enum Singleton {
 }
 ```
 
+优点：实现简单，枚举本身就是单例模式，并且是线程安全的。由 JVM 从根本上提供保障，避免通过反射和序列化的方式破环单例。
+
+缺点：无延迟加载，不适合创建大量单例对象的场景。
+
+## 参考
+
+[1] GPT-4
