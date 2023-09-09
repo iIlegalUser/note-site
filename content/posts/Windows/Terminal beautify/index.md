@@ -116,5 +116,7 @@ Windows Registry Editor Version 5.00
 
 [1] [我的windows terminal美化方案（oh-my-posh3）](https://kirigaya.cn/blog/article?seq=52) 
 
+[2] [魔改的一个posh3主题](https://kirigaya.cn/blog/article?seq=100) 
+
 {{< attachments title="附件" pattern=".*" />}}
 
