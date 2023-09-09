@@ -2,7 +2,7 @@
 title: "Pie"
 date: 2023-04-25T23:32:27+08:00
 
-categories: ["go"]
+categories: ["Go"]
 series: ["daily lib"]
 tags: ["集合运算"]
 

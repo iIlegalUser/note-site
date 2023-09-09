@@ -2,7 +2,7 @@
 title: "文件类型识别"
 date: 2023-06-05T11:30:01+08:00
 
-categories: [go]
+categories: [Go]
 series: []
 tags: []
 

@@ -1,8 +1,8 @@
 ---
-title: "Rust流程控制"
+title: "Rust 流程控制"
 date: 2023-06-05T15:55:52+08:00
 
-categories: [rust]
+categories: [Rust]
 series: []
 tags: []
 draft: true

@@ -1,8 +1,8 @@
 ---
-title: "Rust数据类型"
+title: "Rust 数据类型"
 date: 2023-06-03 12:10:45
 
-categories: [rust]
+categories: [Rust]
 series: []
 tags: []
 draft: false
