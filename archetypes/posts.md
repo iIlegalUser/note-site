@@ -7,6 +7,7 @@ series: []
 tags: []
 
 math: false
+mermaid: false
 draft: true
 
 cover:

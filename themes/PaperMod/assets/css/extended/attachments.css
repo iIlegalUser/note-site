@@ -1,0 +1,106 @@
+/* attachments shortcode */
+
+section.attachments {
+    margin: 2rem 0;
+    position: relative;
+}
+
+section.attachments label {
+    font-weight: 400;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+section.attachments .attachments-files {
+    padding: 15px;
+    display: block;
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+}
+
+section.attachments.orange label {
+    color: #fff;
+    background: #F0B37E;
+}
+
+section.attachments.orange .attachments-files {
+    background: #FFF2DB;
+}
+
+section.attachments.green label {
+    color: #fff;
+    background: rgba(92, 184, 92, 0.8);
+}
+
+section.attachments.green .attachments-files {
+    background: #E6F9E6;
+}
+
+section.attachments.blue label {
+    color: #fff;
+    background: #6AB0DE;
+}
+
+section.attachments.blue .attachments-files {
+    background: #E7F2FA;
+}
+
+section.attachments.grey label {
+    color: #fff;
+    background: #505d65;
+}
+
+section.attachments.grey .attachments-files {
+    background: #f4f4f4;
+}
+
+/* fontawesome */
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+.fa-paperclip:before {
+    content: "\f0c6"
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/webfonts/fa-brands-400.eot);
+    src: url(/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/webfonts/fa-brands-400.woff2) format("woff2"), url(/webfonts/fa-brands-400.woff) format("woff"), url(/webfonts/fa-brands-400.ttf) format("truetype"), url(/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/webfonts/fa-regular-400.eot);
+    src: url(/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(/webfonts/fa-regular-400.woff2) format("woff2"), url(/webfonts/fa-regular-400.woff) format("woff"), url(/webfonts/fa-regular-400.ttf) format("truetype"), url(/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    src: url(/webfonts/fa-solid-900.eot);
+    src: url(/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(/webfonts/fa-solid-900.woff2) format("woff2"), url(/webfonts/fa-solid-900.woff) format("woff"), url(/webfonts/fa-solid-900.ttf) format("truetype"), url(/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free"
+}
+
+.fas {
+    font-weight: 900
+}
