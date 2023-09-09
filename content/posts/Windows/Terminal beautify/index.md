@@ -1,10 +1,10 @@
 ---
-title: "Terminal美化"
+title: "Terminal 美化"
 date: 2023-09-09T14:20:00+08:00
 
 categories: ["Windows"]
 series: []
-tags: []
+tags: ["Windows"]
 
 math: false
 draft: false

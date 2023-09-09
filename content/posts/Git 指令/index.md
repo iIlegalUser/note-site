@@ -2,9 +2,9 @@
 title: "Git 指令"
 date: 2023-05-02T22:13:26+08:00
 
-categories: [git]
+categories: ["Git"]
 series: []
-tags: [git]
+tags: ["Git"]
 
 cover:
     image: "013.webp"

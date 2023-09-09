@@ -2,9 +2,9 @@
 title: "费马小定理"
 date: 2023-09-03T11:20:41+08:00
 
-categories: [算法]
+categories: ["Algorithm"]
 series: []
-tags: []
+tags: ["Algorithm", "Math"]
 
 math: true
 draft: false
