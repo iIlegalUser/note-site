@@ -17,7 +17,7 @@ cover:
 
 ## 安装 scoop
 
-以管理员身份运行 PowerShell
+以管理员身份运行 PowerShell。设置 scoop 安装路径。
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -25,7 +25,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', 'D:\Env\Scoop\Global', 'User')
 ```
 
-普通用户身份运行 PowerShell
+普通用户身份运行 PowerShell。scoop 安装及配置。
 
 ```powershell
 iwr -useb get.scoop.sh | iex
@@ -43,17 +43,23 @@ scoop bucket add nerd-fonts
 sudo scoop install -kg JetBrainsMono-NF
 ```
 
-这里使用的字体是 JetBrainsMono-NF
+这里使用的字体是 JetBrainsMono-NF。
 
 ## 安装 on-my-posh3
 
-以管理员身份运行 PowerShell
+以管理员身份运行 PowerShell，安装插件。
 
 ```powershell
 set-executionpolicy remotesigned
 Install-Module PSReadLine -Force
 Install-Module posh-git
 Install-Module Terminal-Icons
+```
+
+安装 on-my-posh
+
+```shell
+scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 ```
 
 下载 oh-my-posh 主题
@@ -91,9 +97,9 @@ cls
 
 ## 右键在此处打开 Terminal
 
-将以下文本保存为 .reg 文件并执行。
+将以下文本保存为 .reg 文件并执行，或下载附件执行。
 
-注意：需要下载 terminal.ico 图标文件，如果不生效试试把 wt 改成 windows terminal 可执行文件路径
+注意：需要下载 terminal.ico 图标文件（见附件），如果不生效试试把 wt 改成 windows terminal 可执行文件路径
 
 ```toml
 Windows Registry Editor Version 5.00
