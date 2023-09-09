@@ -1,4 +1,7 @@
-resources/_gen/
-.hugo_build.lock
-public/
-themes/.vscode
+/resources/_gen/
+/.hugo_build.lock
+/public/
+/themes/.vscode/
+/resources/
+/.idea/
+/themes/PaperMod/.idea/
