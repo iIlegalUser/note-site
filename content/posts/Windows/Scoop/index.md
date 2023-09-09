@@ -2,7 +2,7 @@
 title: "Windows 下的包管理器：Scoop"
 date: 2023-05-03T15:28:08+08:00
 
-categories: [Windows]
+categories: ["Windows"]
 series: []
 tags: ["Windows", "CLI"]
 
