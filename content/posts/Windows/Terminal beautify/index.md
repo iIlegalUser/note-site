@@ -7,7 +7,7 @@ series: []
 tags: []
 
 math: false
-draft: true
+draft: false
 
 cover:
     image: "cover.webp"
