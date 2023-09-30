@@ -192,29 +192,27 @@
 }
 
 .post-content code {
-    margin: auto 4px;
-    padding: 4px 6px;
-    font-size: 1em;
-    line-height: 1.5;
-    background: var(--code-bg);
-    border-radius: 2px;
+    color: var(--primary-color);
+    font-size: 94%;
+    word-wrap: break-word;
+    padding: 2px 4px 2px;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: var(--block-bg-color);
+    font-family: 'JetBrains Mono', serif;
+    word-break: break-all;
 }
 
 .post-content pre code {
     display: block;
     margin: auto 0;
     padding: 10px;
-    color: rgb(213, 213, 214);
-    background: var(--hljs-bg) !important;
+    /* color: rgb(213, 213, 214); */
+    /* background: var(--hljs-bg) !important; */
     border-radius: var(--radius);
+    font-family: 'JetBrains Mono', serif;
     overflow-x: auto;
     word-break: break-all;
-}
-
-.post-content blockquote {
-    margin: 20px 0;
-    padding: 0 14px;
-    border-inline-start: 3px solid var(--primary);
 }
 
 .post-content hr {

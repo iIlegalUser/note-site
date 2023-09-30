@@ -1,5 +1,5 @@
 /*
-This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+This is just a placeholder blank stylesheet so as to support adding custom styles bundled with theme's default styles
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
@@ -13,9 +13,17 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .toc {
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
-    background: var(--entry);
+    /*background: var(--entry);*/
     border-radius: var(--radius);
     padding: 0.4em;
+
+    font-family: 'JetBrainsMono', serif;
+    color: var(--primary-color);
+    background: #f6f8fa;
+    /* border-radius: 1rem; */
+    filter: drop-shadow(0px 3px 3px #d2dff4);
+    /* border-top: 1px solid var(--primary-color); */
+    /* border-bottom: 1px solid var(--primary-color); */
 }
 
 .toc-container.wide {
@@ -29,10 +37,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .wide .toc {
     position: sticky;
-    top: var(--gap);
-    border: unset;
-    background: unset;
-    border-radius: unset;
+    top: calc(var(--gap) * 1.2);
+    /*border: unset;*/
+    /*background: unset;*/
+    /*border-radius: unset;*/
     width: 100%;
     margin: 0 2px 40px 2px;
 }
@@ -62,7 +70,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .toc .inner {
     margin: 0 0 0 20px;
-    padding: 0px 15px 15px 20px;
+    padding: 0 15px 15px 20px;
     font-size: 16px;
 
     /*目录显示高度*/
@@ -99,7 +107,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .terms-tags a:hover {
     background: none;
-
     webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -119,7 +126,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .dark .terms-tags a:hover {
     background: none;
-
     webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -165,6 +171,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     padding-right: 10px;
 }
 
+
 /* 悬停放大阴影效果 */
 .post-entry {
     transition: all 0.4s;
@@ -174,17 +181,99 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     box-shadow: 5px 5px 20px 5px #dfdfdf;
 }
 
-/* 首行缩进 */
-/* .post-content p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-indent: 2rem;
+
+/* 表格样式 */
+table {
+    display: table;
+    text-align: justify;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    margin: 0 0 20px;
+    width: 100%;
 }
- 
+
+tbody {
+    border: 0;
+}
+
+table tr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+table tr th,
+table tr td {
+    font-size: 1rem;
+    border: 1px solid #d9dfe4;
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+table tr th {
+    font-family: SourceHanSerifCN, serif;
+    text-align: center !important;
+    min-width: 10rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+table tr td:hover,
+table tr th:hover {
+    background-color: var(--block-bg-color);
+}
+
+table td {
+    min-width: 32px;
+}
+
+table > thead > tr > th {
+    text-align: center;
+}
+
+
+/* 中文首行缩进 */
+.post-content > p,
 .post-content blockquote p {
-    text-indent: 0rem;
+    text-indent: 2em;
 }
- 
-.post-content ul, ol, dl {
-    margin-left: 1rem;
-} */
+.post-content > ul {
+    margin-left: 2em;
+}
+
+
+/* 引用 */
+.post-content blockquote {
+    display: block;
+    font-size: .9em;
+    overflow: auto;
+    border-left: 3px solid var(--text-color);
+    padding: 15px 30px 15px 20px;
+    margin: 20px 0;
+    background: var(--quote-block-bg-color);
+}
+.post-content blockquote p {
+    font-size: 1.1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin: 0;
+    line-height: 1.8rem;
+    color: var(--text-color);
+}
+.post-content blockquote .task-list-item input::before {
+    margin-top: .2rem;
+}
+
+
+/* 英语单词换行不隔断 */
+.post-content p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/* 加粗文字效果 */
+.post-content strong {
+    color: var(--primary-color);
+}
