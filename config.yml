@@ -68,7 +68,7 @@ params:
   # 日期格式
   DateFormat: '2006-01-02'
   # 显示文章更新时间
-  ShowLastMod: true 
+  ShowLastMod: true
   # 默认主题
   defaultTheme: auto # dark, light
   # 是否启用主题切换按钮
@@ -223,7 +223,10 @@ markup:
     codeFences: true
     guessSyntax: true
     # lineNos: true
-    style: monokailight
+    style: atom-one-dark
+  goldmark:
+    renderer:
+      unsafe: true
 
 privacy:
   vimeo:
