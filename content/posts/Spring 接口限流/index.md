@@ -423,14 +423,14 @@ spring:
     gateway:
       routes:
         - id: my_route
-          uri: http://example.org
+          uri: https://example.org
           filters:
             - name: RequestRateLimiter
               args:
                 key-resolver: "#{@ipKeyResolver}"
-                redis-rate-limiter.replenishRate: 1			# 令牌填充速度(个/s)
-                redis-rate-limiter.burstCapacity: 2			# 令牌桶的大小
-                redis-rate-limiter.requestedTokens: 1		# 每次请求获取令牌个数
+                redis-rate-limiter.replenishRate: 1            # 令牌填充速度(个/s)
+                redis-rate-limiter.burstCapacity: 2            # 令牌桶的大小
+                redis-rate-limiter.requestedTokens: 1        # 每次请求获取令牌个数
 ```
 
 其中，`key-resolver` 使用 SpEL 表达式 `#{@beanName}` 从 Spring 容器中获取 `hostAddrKeyResolver` 对象。它的实现如下：

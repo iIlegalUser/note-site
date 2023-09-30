@@ -1,16 +1,16 @@
-var fuse;
-var showButton = document.getElementById("search-button");
-var showButtonMobile = document.getElementById("search-button-mobile");
-var hideButton = document.getElementById("close-search-button");
-var wrapper = document.getElementById("search-wrapper");
-var modal = document.getElementById("search-modal");
-var input = document.getElementById("search-query");
-var output = document.getElementById("search-results");
-var first = output.firstChild;
-var last = output.lastChild;
-var searchVisible = false;
-var indexed = false;
-var hasResults = false;
+let fuse;
+const showButton = document.getElementById("search-button");
+const showButtonMobile = document.getElementById("search-button-mobile");
+const hideButton = document.getElementById("close-search-button");
+const wrapper = document.getElementById("search-wrapper");
+const modal = document.getElementById("search-modal");
+const input = document.getElementById("search-query");
+const output = document.getElementById("search-results");
+let first = output.firstChild;
+let last = output.lastChild;
+let searchVisible = false;
+let indexed = false;
+let hasResults = false;
 
 // Listen for events
 showButton? showButton.addEventListener("click", displaySearch) : null;
@@ -24,7 +24,7 @@ modal.addEventListener("click", function (event) {
 });
 document.addEventListener("keydown", function (event) {
   // Forward slash to open search wrapper
-  if (event.key == "/") {
+  if (event.key === "/") {
     if (!searchVisible) {
       event.preventDefault();
       displaySearch();
@@ -32,17 +32,17 @@ document.addEventListener("keydown", function (event) {
   }
 
   // Esc to close search wrapper
-  if (event.key == "Escape") {
+  if (event.key === "Escape") {
     hideSearch();
   }
 
   // Down arrow to move down results list
-  if (event.key == "ArrowDown") {
+  if (event.key === "ArrowDown") {
     if (searchVisible && hasResults) {
       event.preventDefault();
-      if (document.activeElement == input) {
+      if (document.activeElement === input) {
         first.focus();
-      } else if (document.activeElement == last) {
+      } else if (document.activeElement === last) {
         last.focus();
       } else {
         document.activeElement.parentElement.nextSibling.firstElementChild.focus();
@@ -51,12 +51,12 @@ document.addEventListener("keydown", function (event) {
   }
 
   // Up arrow to move up results list
-  if (event.key == "ArrowUp") {
+  if (event.key === "ArrowUp") {
     if (searchVisible && hasResults) {
       event.preventDefault();
-      if (document.activeElement == input) {
+      if (document.activeElement === input) {
         input.focus();
-      } else if (document.activeElement == first) {
+      } else if (document.activeElement === first) {
         input.focus();
       } else {
         document.activeElement.parentElement.previousSibling.firstElementChild.focus();
@@ -94,11 +94,11 @@ function hideSearch() {
 }
 
 function fetchJSON(path, callback) {
-  var httpRequest = new XMLHttpRequest();
+  const httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function () {
     if (httpRequest.readyState === 4) {
       if (httpRequest.status === 200) {
-        var data = JSON.parse(httpRequest.responseText);
+        const data = JSON.parse(httpRequest.responseText);
         if (callback) callback(data);
       }
     }
@@ -108,19 +108,19 @@ function fetchJSON(path, callback) {
 }
 
 function buildIndex() {
-  var baseURL = wrapper.getAttribute("data-url");
+  let baseURL = wrapper.getAttribute("data-url");
   baseURL = baseURL.replace(/\/?$/, '/');
   fetchJSON(baseURL + "index.json", function (data) {
-    var options = {
+    const options = {
       shouldSort: true,
       ignoreLocation: true,
       threshold: 0.0,
       includeMatches: true,
       keys: [
-        { name: "title", weight: 0.8 },
-        { name: "section", weight: 0.2 },
-        { name: "summary", weight: 0.6 },
-        { name: "content", weight: 0.4 },
+        {name: "title", weight: 0.8},
+        {name: "section", weight: 0.2},
+        {name: "summary", weight: 0.6},
+        {name: "content", weight: 0.4},
       ],
     };
     fuse = new Fuse(data, options);
