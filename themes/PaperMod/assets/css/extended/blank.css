@@ -36,14 +36,16 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 .wide .toc {
-    position: sticky;
-    top: calc(var(--gap) * 1.2);
+    position: fixed;
+    top: auto;
     /*border: unset;*/
     /*background: unset;*/
     /*border-radius: unset;*/
-    width: 100%;
-    margin: 0 2px 40px 2px;
+    width: 16%;
+    /*margin: 0 2px 40px 2px;*/
+    margin: auto;
 }
+
 
 .toc details summary {
     cursor: zoom-in;
