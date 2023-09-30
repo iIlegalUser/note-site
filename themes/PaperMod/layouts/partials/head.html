@@ -10,8 +10,6 @@
 <script async src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
 {{ end }}
 
-
-
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
@@ -68,13 +66,8 @@
 {{- $license_css := (resources.Get "css/core/license.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
-{{- /* include `an-old-hope` if hljs is on */}}
-{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default false) }}
-{{- $hljs := (cond ($isHLJSdisabled) (".chroma { background-color: unset !important;}" | resources.FromString
-"assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
-
 {{- /* order is important */}}
-{{- $core := (slice $theme_vars $reset $common $hljs $includes_all $media) | resources.Concat "assets/css/core.css" |
+{{- $core := (slice $theme_vars $reset $common $includes_all $media) | resources.Concat "assets/css/core.css" |
 resources.Minify }}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify
 }}
