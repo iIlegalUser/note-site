@@ -12,9 +12,34 @@
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --hljs-bg: rgb(28, 29, 33);
+    --hljs-bg: #fafafa;
+    --hljs-font: #5e646f;
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+
+    /* lapis.css */
+    --text-color: #40464f;
+    /* Text */
+    --primary-color: #4870ac;
+    /* Primary Color */
+    --bg-color: #ffffff;
+    /* Background */
+
+    --marker-color: #a2b6d4;
+    /* List Marker */
+    --highlight-color: #ffffb5c2;
+    /* Highlight */
+    --header-span-color: var(--primary-color);
+    /* h2 Span Color */
+    --block-bg-color: #f6f8fa;
+    --quote-block-bg-color: #f6f8fa;
+    /* Block Background */
+
+    /* Overwrite of Typora Base Color */
+    --control-text-hover-color: #a2b6d4;
+    --rawblock-edit-panel-bd: var(--block-bg-color);
+    --item-hover-bg-color: rgb(246 248 250);
+    --active-file-bg-color: var(--block-bg-color);
 }
 
 .dark {
@@ -26,10 +51,44 @@
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
     --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
+    --hljs-bg: #2b2b2b;
+    --hljs-font: #a9b7c6;
+    --code-bg: rgb(1, 2, 8);
     /* --code-bg: #313742; */
     --border: rgb(51, 51, 51);
+    
+
+    /* lapis-dark.css */
+    --text-color: #e4e4e4e3;
+    /* Text */
+    --primary-color: #8393ad;
+    /* Primary Color */
+    --bg-color: #1e222a;
+    --bg-sidebar-color: #181c24;
+    /* Background */
+
+    --code-color: #abbad4;
+    /* Inline Code & Code Block */
+    --marker-color: #7d8a9f;
+    /* List Marker */
+    --highlight-color: #ffffb5c2;
+    /* Highlight */
+    --header-span-color: #47556d;
+    /* h2 Span Color */
+    --block-bg-color: #080e1d;
+    /* Code Block Background */
+    --quote-block-bg-color: #2a2f3b;
+    /* Quote Block Background */
+
+    /* Overwrite of Typora Base Color */
+    --md-char-color: #7d8a9f7d;
+    --heading-char-color: var(--text-color);
+    --select-text-bg-color: #dae3ea2e;
+    --search-select-bg-color: #428bca;
+    --item-hover-bg-color: var(--block-bg-color);
+    --window-border: 1px solid var(--bg-color);
+    --control-text-hover-color: var(--text-color);
+    --rawblock-edit-panel-bd: var(--block-bg-color);
 }
 
 .list {
