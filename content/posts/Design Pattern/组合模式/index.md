@@ -2,9 +2,9 @@
 title: "组合模式"
 date: 2023-05-03T21:17:06+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
 cover:
     image: "016.webp"
@@ -12,11 +12,11 @@ cover:
     relative: true
 ---
 
-Composite Pattern: Compose object into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+> Composite Pattern: Compose object into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+> 
+> 组合模式：组合多个对象形成树形结构以表示具有部分－整体关系的层次结构。组合模式让客户端可以统一对待单个对象和组合对象。
 
-组合模式：组合多个对象形成树形结构以表示具有部分－整体关系的层次结构。组合模式让客户端可以统一对待单个对象和组合对象。
-
-组合模式又称为 “部分－整体”（Part- Whole）模式，属于对象结构型模式。它将对象组织到树形结构中，可以用来描述整体与部分的关系。组合模式通过一种巧妙的设计方案使得用户可以一致性地处理整个树形结构或者树形结构的一部分，它描述了如何将容器对象和叶子对象进行递归组合，使得用户在使用时无须对它们进行区分，可以一致地对待容器对象和叶子对象，这就是组合模式的模式动机。
+组合模式又称为 “部分－整体”（Part-Whole）模式，属于对象结构型模式。它将对象组织到树形结构中，可以用来描述整体与部分的关系。组合模式通过一种巧妙的设计方案使得用户可以一致性地处理整个树形结构或者树形结构的一部分，它描述了如何将容器对象和叶子对象进行递归组合，使得用户在使用时无须对它们进行区分，可以一致地对待容器对象和叶子对象，这就是组合模式的模式动机。
 
 ## 结构
 
