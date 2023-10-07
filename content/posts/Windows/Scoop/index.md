@@ -58,7 +58,7 @@ iwr -useb get.scoop.sh | iex
 scoop install aria2
 ```
 
-使用 scoop config 指令可以配置 Aria2 参数，以下是与 Aria2 相关的配置项
+使用 scoop config 指令可以配置 Aria2 参数，以下是与 Aria2 相关的配置项：
 
 ```sh
 aria2-enabled: 开启 Aria2 下载，默认true
@@ -84,13 +84,15 @@ Scoop 全局安装软件的时候需要管理员权限，安装 sudo 后，我�
 scoop install sudo
 ```
 
-- 检查潜在问题
+- 修复并检查潜在问题
 
 ```sh
-scoop checkup	
+scoop install 7zip
+scoop install innounp
+scoop install dark
+sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+scoop checkup
 ```
-
-根据提示修复即可
 
 ## scoop install
 
@@ -152,13 +154,13 @@ java		# 包含不同版本开源 JDK
 games
 ```
 
-对于官方支持的 bucket 可以直接添加。推荐添加 extras 和 versions 仓库。
+对于官方支持的 bucket 可以直接添加。推荐添加 extras 仓库。
 
 ```sh
-scoop bucket add extras versions 
+scoop bucket add extras
 ```
 
-当添加 `nerd-fonts` 仓库后可以通过以下命令搜索到所有的字体：
+添加 `nerd-fonts` 仓库后可以通过以下命令搜索到所有的字体：
 
 ```sh
 scoop search "-NF"
@@ -263,6 +265,6 @@ scoop cache rm *
 
 ## 参考
 
-[Scoop - 最好用的 Windows 包管理器](https://p3terx.com/archives/scoop-the-best-windows-package-manager.html) 
+[1] [Scoop - 最好用的 Windows 包管理器](https://p3terx.com/archives/scoop-the-best-windows-package-manager.html) 
 
-[使用 Scoop 管理 Windows 下的软件和开发环境](https://dejavu.moe/posts/windows-scoop/) 
+[2] [使用 Scoop 管理 Windows 下的软件和开发环境](https://dejavu.moe/posts/windows-scoop/) 
