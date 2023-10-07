@@ -194,26 +194,27 @@ menu:
       name: '首页'
       url: /
       weight: 1
+    - identifier: '搜索'
+      name: '搜索'
+      url: /search/
+      weight: 2
     - identifier: '分类'
       name: '分类'
       url: /categories/
-      weight: 10
-    - identifier: '系列'
-      name: '系列'
-      url: /series/
-      weight: 10
+      weight: 3
+#    - identifier: '系列'
+#      name: '系列'
+#      url: /series/
+#      weight: 10
     - identifier: '标签'
       name: '标签'
       url: /tags/
-      weight: 20
+      weight: 4
     - identifier: '归档'
-      name: 归档
+      name: '归档'
       url: /archives/
-      weight: 20
-    - identifier: '搜索'
-      name: 搜索
-      url: /search/
-      weight: 30
+      weight: 5
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
