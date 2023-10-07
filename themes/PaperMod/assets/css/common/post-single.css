@@ -206,7 +206,7 @@
 .post-content pre code {
     display: block;
     margin: auto 0;
-    padding: 10px;
+    padding: 16px;
     /* color: rgb(213, 213, 214); */
     /* background: var(--hljs-bg) !important; */
     border-radius: var(--radius);
