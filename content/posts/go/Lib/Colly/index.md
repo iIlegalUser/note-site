@@ -2,8 +2,8 @@
 title: "Colly"
 date: 2023-04-27T00:42:58+08:00
 
-categories: ["Go"]
-series: ["daily-lib"]
+categories: ["Go-Lib"]
+series: []
 tags: ["爬虫"]
 
 cover:

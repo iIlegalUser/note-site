@@ -2,9 +2,10 @@
 title: "解释器模式"
 date: 2023-08-02T23:47:17+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
+
 math: false
 draft: false
 
@@ -14,9 +15,9 @@ cover:
     relative: true
 ---
 
-Interpreter Pattern: Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
-
-解释器模式：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
+> Interpreter Pattern: Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+> 
+> 解释器模式：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
 
 解释器模式是一种使用频率较低且学习难度较大的设计模式，它用于描述如何使用面向对象语言构成一个简单的语言解释器。在解释器模式的定义中所指的“语言”是使用规定格式和语法的代码，解释器模式是一种类行为型模式。
 

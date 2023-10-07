@@ -2,7 +2,7 @@
 title: "Git 指令"
 date: 2023-05-02T22:13:26+08:00
 
-categories: ["Git"]
+categories: []
 series: []
 tags: ["Git"]
 

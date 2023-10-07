@@ -2,8 +2,8 @@
 title: "Singleflight"
 date: 2023-04-25T15:23:16+08:00
 
-categories: ["Go"]
-series: [daily-lib]
+categories: ["Go-Lib"]
+series: []
 tags: ["缓存"]
 
 cover:

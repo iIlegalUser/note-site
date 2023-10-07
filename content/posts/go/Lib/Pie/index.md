@@ -2,8 +2,8 @@
 title: "Pie"
 date: 2023-04-25T23:32:27+08:00
 
-categories: ["Go"]
-series: ["daily lib"]
+categories: ["Go-Lib"]
+series: []
 tags: ["集合运算"]
 
 cover:

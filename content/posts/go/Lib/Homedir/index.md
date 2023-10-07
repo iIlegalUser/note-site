@@ -2,8 +2,8 @@
 title: "Homedir"
 date: 2023-04-27T22:09:11+08:00
 
-categories: ["Go"]
-series: ["daily-lib"]
+categories: ["Go-Lib"]
+series: []
 tags: []
 
 cover:

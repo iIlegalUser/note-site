@@ -2,9 +2,9 @@
 title: "Spring 接口限流"
 date: 2023-04-28T21:10:56+08:00
 
-categories: ["spring"]
+categories: []
 series: []
-tags: ["限流"]
+tags: ["Spring", "限流"]
 
 cover:
     image: "cover.webp"

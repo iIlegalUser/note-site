@@ -2,7 +2,7 @@
 title: "原型模式"
 date: 2023-05-01T00:19:00+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
 tags: ["设计模式"]
 
@@ -15,9 +15,9 @@ cover:
     relative: true
 ---
 
-Prototype Pattern: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
-
-原型模式：使用原型实例指定待创建对象的类型，并且通过复制这个原型来创建新的对象。
+> Prototype Pattern: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+>
+> 原型模式：使用原型实例指定待创建对象的类型，并且通过复制这个原型来创建新的对象。
 
 原型模式是一种创建型设计模式，它允许使用者通过复制现有对象来创建新的对象。这种模式既可以避免直接创建对象开销大，又可以提高系统性能。
 

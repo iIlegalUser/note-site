@@ -2,9 +2,9 @@
 title: "接口的幂等性"
 date: 2023-05-29T17:38:46+08:00
 
-categories: [开发]
+categories: []
 series: []
-tags: [幂等性]
+tags: ["幂等性"]
 draft: true
 
 cover:

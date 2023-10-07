@@ -3,9 +3,9 @@ title: "桥接模式"
 date: 2023-05-03T12:01:20+08:00
 lastmod: 2023-05-03T12:01:20+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
 searchHidden: false
 hidemeta: false
@@ -16,9 +16,9 @@ cover:
     relative: true
 ---
 
-Bridge Pattern: Decouple an abstraction from its implementation so that the two can vary independently.
-
-桥接模式：将抽象部分与它的实现部分解耦，使得两者都能够独立变化。
+> Bridge Pattern: Decouple an abstraction from its implementation so that the two can vary independently.
+> 
+> 桥接模式：将抽象部分与它的实现部分解耦，使得两者都能够独立变化。
 
 桥接模式是一种结构型设计模式，它将抽象与实现解耦，使得两者可以独立地变化。这种模式涉及到一个抽象类，它将实现类的对象作为一个成员变量，并通过构造函数或者 setter 方法将实现类的对象传递给抽象类。这样，抽象类可以在运行时调用实现类的方法，而不需要知道具体的实现细节。
 

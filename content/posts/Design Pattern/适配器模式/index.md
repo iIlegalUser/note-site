@@ -1,24 +1,23 @@
 ---
 title: "适配器模式"
 date: 2023-05-02T12:38:43+08:00
-lastmod: 2023-05-02T12:38:43+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
-searchHidden: false
-hidemeta: false
-draft: false
+math: false
+draft: true
+
 cover:
     image: "012.webp"
     alt: "cover"
     relative: true
 ---
 
-Adapter Pattern: Convert the interface of a class into another interfctce clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
-
-适配器模式：将一个类的接口转换成客户希望的另一个接口。 适配器模式让那些接口不兼容的类可以一起工作。
+> Adapter Pattern: Convert the interface of a class into another interfctce clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
+> 
+> 适配器模式：将一个类的接口转换成客户希望的另一个接口。 适配器模式让那些接口不兼容的类可以一起工作。
 
 适配器模式别名包装器 (Wrapper) 模式。它既可以作为类结构型模式，也可以作为对象结构型模式。适配器模式定义中的接口指的是广义的接口，它可以表示一个方法或者方法的集合。
 

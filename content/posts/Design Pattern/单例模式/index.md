@@ -3,7 +3,7 @@ title: "单例模式"
 date: 2023-05-02T00:19:42+08:00
 lastmod: 2023-05-02T00:19:42+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
 tags: ["设计模式"]
 
@@ -16,9 +16,9 @@ cover:
     relative: true
 ---
 
-Singleton Pattern: Ensure a class has only one instance, and provide a global point of access to it. 
-
-单例模式：确保一个类只有一个实例，并提供一个全局访问点来访问这个唯一实例。
+> Singleton Pattern: Ensure a class has only one instance, and provide a global point of access to it. 
+> 
+> 单例模式：确保一个类只有一个实例，并提供一个全局访问点来访问这个唯一实例。
 
 ## 优缺点和使用场景
 

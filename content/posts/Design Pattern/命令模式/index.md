@@ -2,7 +2,7 @@
 title: "命令模式"
 date: 2023-05-09T12:28:53+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
 tags: [设计模式]
 

@@ -2,9 +2,9 @@
 title: "代理模式"
 date: 2023-05-07T17:59:23+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
 cover:
     image: "024.webp"
@@ -12,9 +12,9 @@ cover:
     relative: true
 ---
 
-Proxy Pattern: Provide a surrogate or placeholder for another object to control access to it.
-
-代理模式：给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问。
+> Proxy Pattern: Provide a surrogate or placeholder for another object to control access to it.
+> 
+> 代理模式：给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问。
 
 代理模式是一种对象结构型模式。在代理模式中引入了一个新的代理对象，代理对象在客户端对象和目标对象之间起到中介的作用，它去掉客户不能看到的内容和服务或者增添客户需要的额外的新服务。
 

@@ -2,9 +2,9 @@
 title: "享元模式"
 date: 2023-05-06T15:14:55+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
 cover:
     image: "020.webp"
@@ -22,9 +22,9 @@ Java 中字符串的使用非常普遍，如果每个字符串都用一个对象
 
 正因为区分了内部状态和外部状态，可以将具有相同内部状态的对象存储在享元池中，享元池中的对象是可以实现共享的，当需要的时候就将对象从享元池中取出，实现对象的复用。通过向取出的对象注入不同的外部状态可以得到一系列相似的对象，而这些对象在内存中实际上只存储一份。
 
-Flyweight Pattern: Use sharing to support large numbers of fine-grained objects efficiently.
-
-享元模式：运用共享技术有效地支持大量细粒度对象的复用。
+> Flyweight Pattern: Use sharing to support large numbers of fine-grained objects efficiently.
+> 
+> 享元模式：运用共享技术有效地支持大量细粒度对象的复用。
 
 享元模式是一种对象结构型模式，又称为轻量级模式，它要求能够被共享的对象必须是细粒度对象。
 

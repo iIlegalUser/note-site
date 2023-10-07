@@ -2,9 +2,9 @@
 title: "装饰模式"
 date: 2023-05-04T20:30:18+08:00
 
-categories: [设计模式]
+categories: ["Design Pattern"]
 series: []
-tags: [设计模式]
+tags: ["设计模式"]
 
 cover:
     image: "017.webp"
@@ -14,9 +14,9 @@ cover:
 
 Decorator Pattern: Attach additional resposibilies to an object dynamically. Decorators provide a flexible alternative to subclassing for exlending functionality.
 
-装饰模式：动态地给一个对象增加一些额外的职责。就扩展功能而言，装饰模式提供了一种比使用子类更加灵活的替代方案。
-
-装饰模式是一种对象结构型模式， 它以对客户透明的方式动态地给一个对象附加上更多的责任，可以在不需要创建更多子类的情况下让对象的功能得以扩展。
+> 装饰模式：动态地给一个对象增加一些额外的职责。就扩展功能而言，装饰模式提供了一种比使用子类更加灵活的替代方案。
+> 
+> 装饰模式是一种对象结构型模式， 它以对客户透明的方式动态地给一个对象附加上更多的责任，可以在不需要创建更多子类的情况下让对象的功能得以扩展。
 
 ## 结构
 
