@@ -279,3 +279,12 @@ table > thead > tr > th {
 .post-content strong {
     color: var(--primary-color);
 }
+
+/* 超链接样式 */
+.post-single p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-wrap: break-word;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 2px;
+}
