@@ -211,6 +211,7 @@
     /* background: var(--hljs-bg) !important; */
     border-radius: var(--radius);
     font-family: 'JetBrains Mono', serif;
+    font-variant-ligatures: none;
     overflow-x: auto;
     word-break: break-all;
 }
