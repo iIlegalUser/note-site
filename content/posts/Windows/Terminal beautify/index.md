@@ -83,24 +83,41 @@ notepad $profile
 写入以下文本。注意修改 config 路径。
 
 ```powershell
-oh-my-posh init pwsh --config D:\Env\oh-my-posh\themes\my\sail.omp.json | Invoke-Expression
+# oh-my-posh init pwsh --config D:\Env\oh-my-posh\themes\my\sail.omp.json | Invoke-Expression
 # Import-Module posh-git
 # Import-Module Terminal-Icons
+# Import-Module scoop-completion
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-
-# Autocompletion for arrow keys
+# 设置 Ctrl+z 为撤销
+Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo
+# 设置向上键为后向搜索历史记录
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+# 设置向下键为前向搜索历史纪录
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
-# auto suggestions
-# List
-Set-PSReadLineOption -PredictionSource History -PredictionViewStyle ListView
-# Line
-# Set-PSReadLineOption -PredictionSource History
 
-# cls
+# 设置预测文本来源为历史记录
+# Set-PSReadLineOption -PredictionSource History
+# ListView
+Set-PSReadLineOption -PredictionSource History -PredictionViewStyle ListView
+# 每次回溯输入历史，光标定位于输入内容末尾
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+
+
+# 打开当前工作目录
+function OpenCurrentFolder {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    Invoke-Item $Path
+}
+Set-Alias -Name open -Value OpenCurrentFolder
 ```
 
 重新打开 terminal 查看。
