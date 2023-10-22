@@ -3,8 +3,7 @@ title: "TopK 问题"
 date: 2023-07-18T21:05:09+08:00
 
 categories: ["Algorithm"]
-series: []
-tags: ["Algorithm"]
+tags: ["Algorithm", "Heap"]
 
 draft: false
 math: true
@@ -103,8 +102,77 @@ public int select(int[] arr, int k) {
 
 此算法的时间复杂度为 $O(NlogK)$，空间复杂度为 $O(K)$。
 
+## 对顶堆
+
+考察下面这个问题
+
+维护一个序列，支持两种操作：
+
+1. 向序列中插入一个元素
+2. 输出并删除当前序列的中位数（若序列长度为偶数，则输出较小的中位数）
+
+这个问题可以被进一步抽象成：动态维护一个序列上第 $K$ 大的数，$K$ 值**可能会发生变化**。对于此类问题，我们可以使用 **对顶堆** 这一技巧予以解决。
+
+对顶堆由一个大根堆与一个小根堆组成，小根堆维护大值即前 $K$ 大的值（包含第 $K$ 个)，大根堆维护小值即比第 $K$ 大数小的其他数。
+
+这两个堆构成的数据结构支持以下操作：
+
+- 维护：当小根堆的大小小于 $K$ 时，不断将大根堆堆顶元素取出并插入小根堆，直到小根堆的大小等于 $K$；当小根堆的大小大于 $K$ 时，不断将小根堆堆顶元素取出并插入大根堆，直到小根堆的大小等于 $K$；
+- 插入元素：若插入的元素大于等于小根堆堆顶元素，则将其插入小根堆，否则将其插入大根堆，然后维护对顶堆；
+- 查询第 $K$ 大元素：小根堆堆顶元素即为所求；
+- 删除第 $K$ 大元素：删除小根堆堆顶元素，然后维护对顶堆；
+- $K$ 值 $+1/-1$：根据新的 $K$ 值直接维护对顶堆。
+
+显然，查询第 $k$ 大元素的时间复杂度是 $O(1)$ 的。由于插入、删除或调整 $K$ 值后，小根堆的大小与期望的值 $K$ 最多相差 $1$，故每次维护最多只需对大根堆与小根堆中的元素进行一次调整，因此，这些操作的时间复杂度都是 $O(\log N)$ 的。
+
+```java
+public class MedianHeap {
+  // 大根堆
+  public Queue<Integer> a;
+  // 小根堆
+  public Queue<Integer> b;
+
+  public MedianHeap() {
+    a = new PriorityQueue<>(Comparator.reverseOrder());
+    b = new PriorityQueue<>();
+  }
+
+  public void insert(int x) {
+    if (!b.isEmpty() && x > b.peek()) {
+      b.offer(x);
+    } else {
+      a.offer(x);
+    }
+    balance();
+  }
+
+  public int median() {
+    int ans;
+    if (b.size() > a.size()) {
+      ans = b.poll();
+    } else {
+      ans = a.isEmpty() ? -1 : a.poll();
+    }
+    balance();
+    return ans;
+  }
+
+  private void balance() {
+    if (Math.abs(a.size() - b.size()) > 1) {
+      Queue<Integer> more = a.size() > b.size() ? a : b;
+      Queue<Integer> less = more == a ? b : a;
+      while (more.size() - less.size() > 1) {
+        less.offer(more.poll());
+      }
+    }
+  }
+}
+```
+
 ## 参考
 
 [1] [Top K 问题的最优解 - 快速选择算法（Quickselect）](https://zhuanlan.zhihu.com/p/64627590) 
 
 [2] [快速排序](https://www.cnblogs.com/skywang12345/p/3596746.html) 
+
+[3] [二叉堆 #对顶堆](https://oi-wiki.org/ds/binary-heap/#对顶堆) 

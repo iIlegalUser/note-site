@@ -3,8 +3,7 @@ title: "线段树"
 date: 2023-09-10T12:25:26+08:00
 
 categories: ["Algorithm"]
-series: []
-tags: ["Algorithm"]
+tags: ["Struct"]
 
 math: false
 mermaid: false
