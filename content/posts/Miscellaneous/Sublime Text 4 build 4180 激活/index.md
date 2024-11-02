@@ -35,7 +35,7 @@ https://download.sublimetext.com/sublime_text_build_4180_x64_setup.exe
 c641 0501 b200 90
 ```
 
-![](D:\Projects\Others\note-site\content\posts\Miscellaneous\Sublime Text 4 build 4180 激活\assets\1.webp)
+![](.\assets\1.webp)
 
 另存到其他路径，然后关闭 sublime text，替换原 sublime_text.exe 即可。
 
