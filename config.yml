@@ -3,7 +3,8 @@ baseURL: 'https://note-site.pages.dev'
 # 网站标题
 title: 'Note'
 # 每页显示的文章数量
-paginate: 5
+pagination: 
+  pagerSize: 5
 # 主题名称
 theme: PaperMod
 # 语言代码（zh-简体中文）
