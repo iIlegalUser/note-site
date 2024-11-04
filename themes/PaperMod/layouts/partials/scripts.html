@@ -6,6 +6,16 @@
     codeBlocks.forEach(function (block) {
       block.innerHTML = block.innerHTML.replace(/\t/g, ' '.repeat(tabSize));
     });
+
+    // p标签下超链接打开新标签页
+    const paragraphs = document.querySelectorAll('p');
+      paragraphs.forEach(paragraph => {
+          const links = paragraph.querySelectorAll('a');
+          // 为每个 <a> 标签添加 target="_blank" 属性
+          links.forEach(link => {
+              link.setAttribute('target', '_blank');
+          });
+      });
   });
 </script>
   
