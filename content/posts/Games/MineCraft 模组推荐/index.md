@@ -1,5 +1,5 @@
 ---
-title: "MineCreaft 模组推荐"
+title: "MineCraft 模组推荐"
 date: "2024-11-04T19:10:45+08:00"
 
 categories: []
