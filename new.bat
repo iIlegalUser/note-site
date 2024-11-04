@@ -60,7 +60,6 @@ mkdir "%base_dir%\%new_folder_name%"
 echo 分类文件夹 "%new_folder_name%" 已创建。
 
 :end
-REM 询问用户是否继续
 set /p continue=是否继续操作？(y/n, default n): 
 if not defined continue set continue="n"
 if /i "%continue%"=="y" goto main
