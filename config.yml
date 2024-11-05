@@ -254,3 +254,18 @@ services:
     disableInlineCSS: true # 禁用 Hugo 提供的内联样式
   twitter:
     disableInlineCSS: true # 禁用 Hugo 提供的内联样式
+
+languages:
+  zh:
+    contentDir: content
+    languageCode: zh-CN
+    languageName: Chinese
+    params:
+      reading_speed: 400  # 中文阅读速度
+    weight: 2
+  en:
+    languageCode: en-US
+    languageName: English
+    params:
+      reading_speed: 228
+    weight: 1
