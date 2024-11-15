@@ -7,16 +7,16 @@ series: []
 tags: ["设计模式"]
 
 cover:
-    image: "017.webp"
+    image: "/cover/017.webp"
     alt: "cover"
     relative: true
 ---
 
-Decorator Pattern: Attach additional resposibilies to an object dynamically. Decorators provide a flexible alternative to subclassing for exlending functionality.
-
+> Decorator Pattern: Attach additional resposibilies to an object dynamically. Decorators provide a flexible alternative to subclassing for exlending functionality.
+>
 > 装饰模式：动态地给一个对象增加一些额外的职责。就扩展功能而言，装饰模式提供了一种比使用子类更加灵活的替代方案。
-> 
-> 装饰模式是一种对象结构型模式， 它以对客户透明的方式动态地给一个对象附加上更多的责任，可以在不需要创建更多子类的情况下让对象的功能得以扩展。
+
+装饰模式是一种对象结构型模式， 它以对客户透明的方式动态地给一个对象附加上更多的责任，可以在不需要创建更多子类的情况下让对象的功能得以扩展。
 
 ## 结构
 
@@ -39,7 +39,6 @@ Decorator Pattern: Attach additional resposibilies to an object dynamically. Dec
 public abstract class Component {
   public abstract void operation();
 }
-
 
 // 具体构件
 public class ConcreteComponent extends Component {

@@ -9,7 +9,7 @@ draft: false
 math: true
 
 cover:
-    image: "032.webp"
+    image: "/cover/032.webp"
     alt: "cover"
     relative: true
 ---

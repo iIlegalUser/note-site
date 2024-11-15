@@ -9,10 +9,6 @@ tags: ["设计模式"]
 math: false
 draft: true
 
-cover:
-    image: "cover.webp"
-    alt: "cover"
-    relative: true
 ---
 
 > Iterator Pattern: Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.

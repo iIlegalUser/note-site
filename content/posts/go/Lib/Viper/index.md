@@ -7,7 +7,7 @@ series: []
 tags: ["配置"]
 
 cover:
-    image: "006.webp"
+    image: "/cover/006.webp"
     alt: "cover"
     relative: true
 ---

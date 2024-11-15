@@ -9,10 +9,6 @@ math: false
 mermaid: false
 draft: true
 
-cover:
-    image: "cover.webp"
-    alt: "cover"
-    relative: true
 ---
 
 线段树是算法竞赛中常用的用来维护 **区间信息** 的数据结构。

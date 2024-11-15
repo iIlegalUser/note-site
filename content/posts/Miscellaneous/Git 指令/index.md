@@ -7,7 +7,7 @@ series: []
 tags: ["Git"]
 
 cover:
-    image: "013.webp"
+    image: "/cover/013.webp"
     alt: "cover"
     relative: true
 ---

@@ -11,7 +11,7 @@ searchHidden: false
 hidemeta: false
 draft: false
 cover:
-    image: "011.webp"
+    image: "/cover/011.webp"
     alt: "cover"
     relative: true
 ---

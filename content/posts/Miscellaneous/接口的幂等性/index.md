@@ -8,7 +8,7 @@ tags: ["幂等性"]
 draft: true
 
 cover:
-    image: "028.webp"
+    image: "/cover/028.webp"
     alt: "cover"
     relative: true
 ---

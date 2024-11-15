@@ -7,7 +7,7 @@ series: []
 tags: ["Spring", "限流"]
 
 cover:
-    image: "cover.webp"
+    image: "/cover/049.webp"
     alt: "cover"
     relative: true
 ---

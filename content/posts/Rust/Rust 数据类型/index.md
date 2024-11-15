@@ -9,7 +9,7 @@ tags: []
 draft: false
 
 cover:
-    image: "030.webp"
+    image: "/cover/030.webp"
     alt: "cover"
     relative: true
 ---

@@ -7,7 +7,7 @@ series: []
 tags: ["设计模式"]
 
 cover:
-    image: "025.webp"
+    image: "/cover/025.webp"
     alt: "cover"
     relative: true
 ---

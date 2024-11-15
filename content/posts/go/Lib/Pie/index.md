@@ -7,7 +7,7 @@ series: []
 tags: ["集合运算"]
 
 cover:
-    image: "009.webp"
+    image: "/cover/009.webp"
     alt: "cover"
     relative: true
 ---

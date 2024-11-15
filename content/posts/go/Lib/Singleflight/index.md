@@ -7,7 +7,7 @@ series: []
 tags: ["缓存"]
 
 cover:
-    image: "cover.webp"
+    image: "/cover/046.webp"
     alt: "cover"
     relative: true
 ---

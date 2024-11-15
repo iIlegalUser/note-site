@@ -8,10 +8,6 @@ tags: []
 
 draft: true
 
-cover:
-    image: "cover.webp"
-    alt: "cover"
-    relative: true
 ---
 
 > 痛苦地欢愉。
