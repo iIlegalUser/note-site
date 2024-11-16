@@ -58,7 +58,7 @@ $$
 
 $$
 \begin{aligned}
-&根据二项式定理有
+&二项式定理：
 (a+1)^p=a^p+\begin{pmatrix}p\\1 \end{pmatrix}a^{p-1}+\begin{pmatrix}p\\2 \end{pmatrix}a^{p-2}+\cdots+\begin{pmatrix}p\\p-1 \end{pmatrix}a+1\\[1ex]
 &\because 1\le k\le p-1时，\begin{pmatrix}p\\k \end{pmatrix}=\cfrac{p(p-1)\cdots(p-k+1)}{k!}\\
 &\therefore \begin{pmatrix}p\\1 \end{pmatrix}\equiv \begin{pmatrix}p\\2 \end{pmatrix}\equiv \cdots\equiv \begin{pmatrix}p\\p-1 \end{pmatrix}\equiv0\pmod{p}\\[1ex]
