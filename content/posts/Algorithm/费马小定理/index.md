@@ -19,7 +19,6 @@ cover:
 
 逆元通常是用来解决除法求模问题的，求模运算有以下法则：
 
-{{< mathb >}}
 $$
 \begin{cases}
 (a+b)\%c&=&(a\%c+b\%c)\%c\quad &加法法则\\[1ex]
@@ -27,26 +26,21 @@ $$
 (a*b)\%c&=&(a\%c*b\%c)\%c\quad &乘法法则
 \end{cases}
 $$
-{{</ mathb >}}
-
 可以发现，除法求模没有相应的法则。当计算 $\cfrac{a}{b}\%c$ 时，如果 $a$，$b$ 很大，不能在计算完之后取模，可以通过变换将除法变为乘法，然后就可以通过上面的公式取模了。
 
-设 {{<mathi>}}$b*k\%c=1${{</mathi>}} ，则有
+设 $b*k\%c=1$ ，则有
 
-{{<mathb>}}
+
 $$
 \cfrac{a}{b}\%c=\cfrac{a}{b}\%c*(b*k\%c)=(a*k)\%c
 $$
-{{</mathb>}}
+
 
 这样就把除法转化为了乘法，这里的 $k$ 就叫做 $b$ 关于 $c$ 的乘法逆元，写成数学表达式就是
 
-{{<mathb>}}
 $$
 bk\equiv1\pmod c
 $$
-
-{{</mathb>}}
 
 ## 定义
 
@@ -62,7 +56,6 @@ $$
 
 显然 $1^p\equiv 1\pmod{p}$，假设 $a^p\equiv a\pmod{p}$ 成立，需要证明 $(a+1)^p\equiv a+1\pmod{p}$。
 
-{{<mathb>}}
 $$
 \begin{aligned}
 &根据二项式定理有
@@ -75,8 +68,6 @@ $$
 &\therefore原式得证
 \end{aligned}
 $$
-{{</mathb>}}
-
 ## 求解组合数
 
 求解 $C_m^n$ ，最终结果对 $10^9+7$ 取模。
@@ -99,7 +90,6 @@ int f(int m, int n) {
 
 方法二：快速幂+费马小定理
 
-{{<mathb>}}
 $$
 \begin{align*}
 C_m^n &= \cfrac{m!}{(m-n)!*n!}\%MOD\\[1ex]
@@ -107,9 +97,7 @@ C_m^n &= \cfrac{m!}{(m-n)!*n!}\%MOD\\[1ex]
 \end{align*}
 $$
 
-{{</mathb>}}
-
-设 {{<mathi>}} $a=(m-n+1)*(m-n+2)*\ldots *m,b=1*2*\ldots *n$ {{</mathi>}}，那么现在就要求 $b$ 对于 $p$ 的乘法逆元。将原式拆分为 {{<mathi>}}$\cfrac{a}{1}*\cfrac{a}{2}*...\cfrac{a}{n}$ {{</mathi>}}，则只需要计算 $i(1\le i\le n)$ 的逆元。根据费马小定理得逆元 $k = i^{p-2} \%p$ 。
+设 $a=(m-n+1)*(m-n+2)*\ldots *m,b=1*2*\ldots *n$，那么现在就要求 $b$ 对于 $p$ 的乘法逆元。将原式拆分为 $\cfrac{a}{1}*\cfrac{a}{2}*...\cfrac{a}{n}$，则只需要计算 $i(1\le i\le n)$ 的逆元。根据费马小定理得逆元 $k = i^{p-2} \%p$ 。
 
 ```java
 // 非递归快速幂对p取模

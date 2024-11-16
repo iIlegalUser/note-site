@@ -229,6 +229,21 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    # 用于支持数学公式
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
 
 privacy:
   vimeo:

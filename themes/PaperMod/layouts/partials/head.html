@@ -3,13 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<!-- mathjax 支持 -->
-{{ partial "mathjax.html" . }}
-<!-- mermaid 支持 -->
-{{ if (.Params.mermaid) }}
-<script async src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
-{{ end }}
-
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
