@@ -77,7 +77,12 @@ sInput.onkeyup = function (e) {
     // run a search query (for "term") every time a letter is typed
     // in the search box
     if (fuse) {
-        const results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
+        let results;
+        if (params.fuseOpts) {
+            results = fuse.search(this.value.trim(), {limit: params.fuseOpts.limit}); // the actual query being run using fuse.js along with options
+        } else {
+            results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
+        }
         if (results.length !== 0) {
             // build our html if result exists
             let resultSet = ''; // our results bucket
@@ -120,23 +125,23 @@ document.onkeydown = function (e) {
     if (key === "Escape") {
         reset()
     } else if (!resultsAvailable || !inbox) {
-
+        return
     } else if (key === "ArrowDown") {
         e.preventDefault();
-        if (ae === sInput) {
+        if (ae == sInput) {
             // if the currently focused element is the search input, focus the <a> of first <li>
             activeToggle(resList.firstChild.lastChild);
-        } else if (ae.parentElement !== last) {
+        } else if (ae.parentElement != last) {
             // if the currently focused element's parent is last, do nothing
             // otherwise select the next search result
             activeToggle(ae.parentElement.nextSibling.lastChild);
         }
     } else if (key === "ArrowUp") {
         e.preventDefault();
-        if (ae.parentElement === first) {
+        if (ae.parentElement == first) {
             // if the currently focused element is first item, go to input box
             activeToggle(sInput);
-        } else if (ae !== sInput) {
+        } else if (ae != sInput) {
             // if the currently focused element is input box, do nothing
             // otherwise select the previous search result
             activeToggle(ae.parentElement.previousSibling.lastChild);
