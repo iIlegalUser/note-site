@@ -10,7 +10,7 @@ mermaid: false
 draft: false
 
 cover:
-    image: "/cover/038.webp"
+    image: "/cover/021.webp"
     alt: "cover"
     relative: true
 ---
