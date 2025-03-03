@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Note</title>
+    <link>https://note-site.pages.dev/posts/</link>
+    <description>Recent content in Posts on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 08 Nov 2024 20:14:46 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 中的注解</title>
+      <link>https://note-site.pages.dev/posts/java/java-%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Fri, 08 Nov 2024 20:14:46 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/java/java-%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/</guid>
+      <description>&lt;h2 id=&#34;一元数据metadata&#34;&gt;一、元数据metadata&lt;/h2&gt;
+&lt;p&gt;元数据是指用来描述数据的数据，更通俗一点，就是描述代码间关系，或者代码与其他资源（例如数据库表）之间内在联系的数据。&lt;/p&gt;
+&lt;p&gt;基于元数据的广泛应用，JDK5.0 引入了 &lt;code&gt;Annotation&lt;/code&gt; 的概念来描述元数据。在 Java 中，元数据以标签的形式存在于 Java 代码中，元数据标签的存在并不影响程序代码的编译和执行。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MineCraft 模组推荐</title>
+      <link>https://note-site.pages.dev/posts/games/minecraft-%E6%A8%A1%E7%BB%84%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Mon, 04 Nov 2024 19:10:45 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/games/minecraft-%E6%A8%A1%E7%BB%84%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;中文名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;英文名称&lt;/th&gt;
+          &lt;th&gt;用途&lt;/th&gt;
+          &lt;th&gt;支持&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;输入法冲突修复&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.mcmod.cn/class/3358.html&#34;&gt;IMBlocker&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;修复中文输入法冲突&lt;/td&gt;
+          &lt;td&gt;Fabric、Forge、NeoForge&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Nyf 的箭袋&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.mcmod.cn/class/6031.html&#34;&gt;Nyf&amp;rsquo;s Quivers&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;添加箭袋&lt;/td&gt;
+          &lt;td&gt;Fabric、Forge&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.mcmod.cn/class/8979.html&#34;&gt;Freecam&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;开源版本，灵魂出窍&lt;/td&gt;
+          &lt;td&gt;Fabric、Forge、NeoForge&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Cloth Config API&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;通用拼音搜索&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Just Enough Characters&lt;/td&gt;
+          &lt;td&gt;支持拼音搜索物品&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;苹果皮&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AppleSkin&lt;/td&gt;
+          &lt;td&gt;饱食度可视化，显示食物饱食度&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;自动汉化更新&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;I18nUpdateMod&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;JEI 物品管理器&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Just Enough Items&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;祛魔编辑台&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Disenchantment Edit Table&lt;/td&gt;
+          &lt;td&gt;分离装备或附魔书上的附魔&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;鞘翅插槽&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Elytra Slot&lt;/td&gt;
+          &lt;td&gt;添加鞘翅插槽，可以同时装备盔甲&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>配置汇总</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/%E9%85%8D%E7%BD%AE%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 04 Nov 2024 17:54:18 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/%E9%85%8D%E7%BD%AE%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;h2 id=&#34;idea配置&#34;&gt;IDEA配置&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;Appearance &amp;amp; Behavior&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Appearance&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Use Custom Font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Inter&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Editor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;JetBrains Mono&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Line Height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1.2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Sublime Text 4 Build 4180 激活</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/</link>
+      <pubDate>Sat, 02 Nov 2024 17:06:39 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/</guid>
+      <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;官网： &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;https://www.sublimetext.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;下载地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://download.sublimetext.com/sublime_text_build_4180_x64_setup.exe&#34;&gt;https://download.sublimetext.com/sublime_text_build_4180_x64_setup.exe&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;激活&#34;&gt;激活&lt;/h2&gt;
+&lt;p&gt;安装之后，使用sublime text 打开安装目录下的sublime_text.exe文件。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Ctrl + F&lt;/code&gt; 搜索&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;8079 0500 0f94 c2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更改为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c641 0501 b200 90
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/assets/1.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;另存到其他路径，然后关闭 sublime text，替换原 sublime_text.exe 即可。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Telegram被封号解决办法</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/telegram%E8%A2%AB%E5%B0%81%E5%8F%B7%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Sun, 10 Mar 2024 12:14:16 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/telegram%E8%A2%AB%E5%B0%81%E5%8F%B7%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description>&lt;h3 id=&#34;telegram-被封禁解封方法一&#34;&gt;Telegram 被封禁解封方法一&lt;/h3&gt;
+&lt;p&gt;用手机或者电脑浏览器打开链接 &lt;a href=&#34;https://telegram.org/support&#34;&gt;https://telegram.org/support&lt;/a&gt; 这个网页是 Telegram 官方支持页面。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Please describe your problem 内容填写如下，自行编辑也可以。 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Dear Sir/Ma’am. 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;My number +1 xxx xxx xxxx been banned and i am not able to figure out the reason for supension,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;please help me to recover my account. Thank you. 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your email 内容填写 随便填写一个 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your phone number 内容填写 你的 Telegram 登录手机号码
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;telegram-被封禁解封方法二&#34;&gt;Telegram 被封禁解封方法二&lt;/h3&gt;
+&lt;p&gt;使用自己任意一个邮箱，编辑邮件发送至&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>二叉堆</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E4%BA%8C%E5%8F%89%E5%A0%86/</link>
+      <pubDate>Sun, 22 Oct 2023 15:05:52 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E4%BA%8C%E5%8F%89%E5%A0%86/</guid>
+      <description>&lt;p&gt;从二叉堆的结构说起，它是一棵二叉树，并且是完全二叉树，每个结点中存有一个元素（或者说，有个权值）。&lt;/p&gt;
+&lt;p&gt;堆性质：父亲的权值不小于儿子的权值（大根堆）。同样的，我们可以定义小根堆。本文以大根堆为例。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>并查集</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link>
+      <pubDate>Sun, 22 Oct 2023 10:50:47 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid>
+      <description>&lt;p&gt;并查集（Disjoint Set Union）是一种用于管理元素所属集合的数据结构，实现为一个森林，其中每棵树表示一个集合，树中的节点表示对应集合中的元素。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>基础问题</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 10 Oct 2023 21:49:17 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;计算数组中所有数在数轴上两两之间的距离的和&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例如：&lt;code&gt;[1,2,4,9]&lt;/code&gt;，结果为 &lt;code&gt;(2-1)+(4-1)+(9-1)+(4-2)+(9-2)+(9-4)=26&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;思路：从小到大枚举 $nums[i]$，此时左边有 $i$ 个数字，右边有 $n-i$ 个数字（算上 $nums[i]$），所以共有 $i×(n−i)$ 对数字在计算距离时会累加 $nums[i] - nums[i-1]$。我们依次遍历完 $[1,n-1]$ 范围内所有的 $nums[i]$，将 $(nums[i] - nums[i - 1]) * i * (n - i)$ 累加到答案中即可。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>快速幂</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E5%BF%AB%E9%80%9F%E5%B9%82/</link>
+      <pubDate>Mon, 09 Oct 2023 14:34:52 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid>
+      <description>&lt;p&gt;快速幂，二进制取幂（Binary Exponentiation，也称平方法），是一个在 $O(\log n)$ 的时间内计算 $a^n$ 的小技巧，而暴力的计算需要 $O(n)$ 的时间。&lt;/p&gt;
+&lt;h2 id=&#34;过程&#34;&gt;过程&lt;/h2&gt;
+&lt;p&gt;首先将 $n$ 表示为二进制，例如&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>常见服务默认端口号</title>
+      <link>https://note-site.pages.dev/posts/linux/%E5%B8%B8%E8%A7%81%E6%9C%8D%E5%8A%A1%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%E5%8F%B7/</link>
+      <pubDate>Fri, 29 Sep 2023 19:43:04 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/linux/%E5%B8%B8%E8%A7%81%E6%9C%8D%E5%8A%A1%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%E5%8F%B7/</guid>
+      <description>&lt;p&gt;0 - 1023 之间的端口号被称作 Well Konwn Ports，由 IANA 分配管理，1024 及以上的端口号可以被其它应用程序使用。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Port&lt;/th&gt;
+          &lt;th&gt;Service&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1080&lt;/td&gt;
+          &lt;td&gt;Socks 代理&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1313&lt;/td&gt;
+          &lt;td&gt;Hugo&lt;/td&gt;
+          &lt;td&gt;静态网站生成器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1521&lt;/td&gt;
+          &lt;td&gt;Oracle 数据库监听端口&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2049&lt;/td&gt;
+          &lt;td&gt;NFS&lt;/td&gt;
+          &lt;td&gt;网络文件系统&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2181&lt;/td&gt;
+          &lt;td&gt;Apache Zookeeper&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2375&lt;/td&gt;
+          &lt;td&gt;Docker REST API (HTTP)&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2376&lt;/td&gt;
+          &lt;td&gt;Docker REST API (HTTPS)&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3000&lt;/td&gt;
+          &lt;td&gt;Grafana&lt;/td&gt;
+          &lt;td&gt;监控可视化平台&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3306&lt;/td&gt;
+          &lt;td&gt;MySQL&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4200&lt;/td&gt;
+          &lt;td&gt;AngularJS&lt;/td&gt;
+          &lt;td&gt;JS 应用设计框架&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5244&lt;/td&gt;
+          &lt;td&gt;AList&lt;/td&gt;
+          &lt;td&gt;支持多种存储的文件列表程序&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5432&lt;/td&gt;
+          &lt;td&gt;PostgreSQL&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5901&lt;/td&gt;
+          &lt;td&gt;VNC&lt;/td&gt;
+          &lt;td&gt;远程桌面控制&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6000&lt;/td&gt;
+          &lt;td&gt;X11&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6379&lt;/td&gt;
+          &lt;td&gt;Redis&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8080&lt;/td&gt;
+          &lt;td&gt;Jenkins&lt;/td&gt;
+          &lt;td&gt;CI 工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8848&lt;/td&gt;
+          &lt;td&gt;Nacos&lt;/td&gt;
+          &lt;td&gt;注册中心、配置中心&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8888&lt;/td&gt;
+          &lt;td&gt;Jupyter Notebook&lt;br&gt;宝塔面板&lt;/td&gt;
+          &lt;td&gt;交互式笔记本&lt;br&gt;服务器运维面板&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9000&lt;/td&gt;
+          &lt;td&gt;Portainer&lt;/td&gt;
+          &lt;td&gt;Docker 图形化工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25565&lt;/td&gt;
+          &lt;td&gt;我的世界&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27017&lt;/td&gt;
+          &lt;td&gt;MongoDB&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://matt-rickard.com/de-facto-ports&#34;&gt;De Facto Ports&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Terminal 美化</title>
+      <link>https://note-site.pages.dev/posts/windows/terminal-beautify/</link>
+      <pubDate>Sat, 09 Sep 2023 14:20:00 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/windows/terminal-beautify/</guid>
+      <description>&lt;h2 id=&#34;安装-scoop&#34;&gt;安装 Scoop&lt;/h2&gt;
+&lt;p&gt;见 &lt;a href=&#34;../scoop&#34;&gt;Windows 下的包管理器：Scoop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装 terminal 使用的字体，推荐使用 JetBrainsMono-NF。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;scoop&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-k&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;JetBrainsMono-NF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-powershell-7&#34;&gt;安装 Powershell 7&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop install pwsh -k
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装并配置-on-my-posh&#34;&gt;安装并配置 on-my-posh&lt;/h2&gt;
+&lt;p&gt;PowerShell 7 自带 PSReadLine，在 PowerShell 5 上需要自己安装，可以通过 &lt;code&gt;$PSVersionTable&lt;/code&gt; 命令查看当前 PowerShell 版本。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>费马小定理</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sun, 03 Sep 2023 11:20:41 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;逆元&#34;&gt;逆元&lt;/h2&gt;
+&lt;p&gt;逆元通常是用来解决除法求模问题的，求模运算有以下法则：&lt;/p&gt;
+$$
+\begin{cases}
+(a+b)\%c&amp;=&amp;(a\%c+b\%c)\%c\quad &amp;加法法则\\[1ex]
+(a-b)\%c&amp;=&amp;(a\%c-b\%c)\%c\quad &amp;减法法则\\[1ex]
+(a*b)\%c&amp;=&amp;(a\%c*b\%c)\%c\quad &amp;乘法法则
+\end{cases}
+$$&lt;p&gt;
+可以发现，除法求模没有相应的法则。当计算 $\cfrac{a}{b}\%c$ 时，如果 $a$，$b$ 很大，不能在计算完之后取模，可以通过变换将除法变为乘法，然后就可以通过上面的公式取模了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解释器模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Wed, 02 Aug 2023 23:47:17 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Interpreter Pattern: Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.&lt;/p&gt;
+&lt;p&gt;解释器模式：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TopK 问题</title>
+      <link>https://note-site.pages.dev/posts/algorithm/topk-%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 18 Jul 2023 21:05:09 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/topk-%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;TopK 问题指的是寻找数组第 $K$ 大/小的元素。一种简单的做法是对数组排序，然后取第 $K$ 个元素，时间复杂度为 $O(NlogN)$，接下来以寻找第 $K$ 大的元素为例，介绍另外两种做法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rust 流程控制</title>
+      <link>https://note-site.pages.dev/posts/rust/rust-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Mon, 05 Jun 2023 15:55:52 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/rust/rust-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
+      <description>&lt;h2 id=&#34;if&#34;&gt;if&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;condition&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;number&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;condition&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;fm&#34;&gt;println!&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;The value of number is: &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上代码有以下几点要注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;if&lt;/code&gt; 语句块是表达式&lt;/strong&gt;，这里我们使用 &lt;code&gt;if&lt;/code&gt; 表达式的返回值来给 &lt;code&gt;number&lt;/code&gt; 进行赋值：&lt;code&gt;number&lt;/code&gt; 的值是 &lt;code&gt;5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用 &lt;code&gt;if&lt;/code&gt; 来赋值时，要保证每个分支返回的类型一样(事实上，这种说法不完全准确，见&lt;a href=&#34;https://course.rs/appendix/expressions.html#if%E8%A1%A8%E8%BE%BE%E5%BC%8F&#34;&gt;这里&lt;/a&gt;)，此处返回的 &lt;code&gt;5&lt;/code&gt; 和 &lt;code&gt;6&lt;/code&gt; 就是同一个类型，如果返回类型不一致就会报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;for-循环&#34;&gt;for 循环&lt;/h2&gt;
+&lt;p&gt;以下代码会循环输出一个从 1 到 5 的序列&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文件类型识别</title>
+      <link>https://note-site.pages.dev/posts/go/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Mon, 05 Jun 2023 11:30:01 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/</guid>
+      <description>&lt;p&gt;文件类型识别是指根据文件的二进制数据判断文件的类型。以下是几种常见的文件类型识别方法：文件类型识别是在很多应用场景都需要用到的功能，比如在Web开发中，通常需要根据上传文件的类型进行不同的处理；在文件管理系统中，对不同文件类型展示不同的图标和操作等。文件类型识别的方法通常有以下几种：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rust 数据类型</title>
+      <link>https://note-site.pages.dev/posts/rust/rust-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sat, 03 Jun 2023 12:10:45 +0000</pubDate>
+      <guid>https://note-site.pages.dev/posts/rust/rust-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>&lt;h2 id=&#34;切片&#34;&gt;切片&lt;/h2&gt;
+&lt;p&gt;切片允许你引用集合中部分连续的元素序列，而不是引用整个集合。切片的长度无法在编译期得知，所以不能直接使用切片类型。&lt;strong&gt;切片只能使用引用类型&lt;/strong&gt;。切片引用（如无说明，以下均用切片指代切片引用）占用两个字的内存空间，第一个字是指向数据的指针，第二个字是切片的长度。在&lt;code&gt;x86-64&lt;/code&gt;架构的机器上，一个字是 64 位即 8 字节，所以切片就是 16 字节。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>命令模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 09 May 2023 12:28:53 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Command Pattern: Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.&lt;/p&gt;
+&lt;p&gt;命令模式：将一个请求封装为一个对象，从而可用不同的请求对客户进行参数化，对请求排队或者记录请求日志，以及支持可撤销的操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>职责链模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 08 May 2023 16:38:38 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;p&gt;职责链可以是一条直线、一个环或者一个树形结构，最常见的职责链是直线型，即沿着一条单向的链来传递请求。链上的每一个对象都是请求处理者，职责链模式可以将请求的处理者组织成一条链，并让请求沿着链传递，由链上的处理者对请求进行相应的处理，客户端无须关心请求的处理细节以及请求的传递，只需将请求发送到链上即可，将请求的发送者和请求的处理者解耦。这就是职责链模式的模式动机。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>代理模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 07 May 2023 17:59:23 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Proxy Pattern: Provide a surrogate or placeholder for another object to control access to it.&lt;/p&gt;
+&lt;p&gt;代理模式：给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;代理模式是一种对象结构型模式。在代理模式中引入了一个新的代理对象，代理对象在客户端对象和目标对象之间起到中介的作用，它去掉客户不能看到的内容和服务或者增添客户需要的额外的新服务。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>享元模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sat, 06 May 2023 15:14:55 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;p&gt;Java 中字符串的使用非常普遍，如果每个字符串都用一个对象来表示，会导致系统中有很多重复的字符串，占用较多的内存空间。那么如何避免系统中出现大量相同或相似的对象，同时又不影响客户端程序这些对象进行操作？享元模式正是为解决这一类问题而诞生。享元模式通过共享技术实现相同或相似对象的重用，在逻辑上每一个出现的字符都有一个对象与之对应，然而在物理上它们却共享同一个享元对象，这个对象可以出现在一个字符串的不同地方，相同的字符对象都指向同一个实例，在享元模式中存储这些共享实例对象的地方称为享元池 (Flyweight Pool) 。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>外观模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Fri, 05 May 2023 13:44:43 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Facade Pattern: Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.&lt;/p&gt;
+&lt;p&gt;外观模式：为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口， 这个接口使得这一子系统更加容易使用。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>装饰模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Thu, 04 May 2023 20:30:18 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Decorator Pattern: Attach additional resposibilies to an object dynamically. Decorators provide a flexible alternative to subclassing for exlending functionality.&lt;/p&gt;
+&lt;p&gt;装饰模式：动态地给一个对象增加一些额外的职责。就扩展功能而言，装饰模式提供了一种比使用子类更加灵活的替代方案。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>组合模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Wed, 03 May 2023 21:17:06 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Composite Pattern: Compose object into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.&lt;/p&gt;
+&lt;p&gt;组合模式：组合多个对象形成树形结构以表示具有部分－整体关系的层次结构。组合模式让客户端可以统一对待单个对象和组合对象。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows 下的包管理器：Scoop</title>
+      <link>https://note-site.pages.dev/posts/windows/scoop/</link>
+      <pubDate>Wed, 03 May 2023 15:28:08 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/windows/scoop/</guid>
+      <description>&lt;p&gt;Scoop 是一个 Windows 下的命令行安装程序，它可以帮助用户轻松地安装、卸载和管理命令行工具和应用程序。Scoop 的设计理念是使得软件的安装和管理过程更加简单、快速和可靠。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>桥接模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Wed, 03 May 2023 12:01:20 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Bridge Pattern: Decouple an abstraction from its implementation so that the two can vary independently.&lt;/p&gt;
+&lt;p&gt;桥接模式：将抽象部分与它的实现部分解耦，使得两者都能够独立变化。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;桥接模式是一种结构型设计模式，它将抽象与实现解耦，使得两者可以独立地变化。这种模式涉及到一个抽象类，它将实现类的对象作为一个成员变量，并通过构造函数或者 setter 方法将实现类的对象传递给抽象类。这样，抽象类可以在运行时调用实现类的方法，而不需要知道具体的实现细节。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git 指令</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/git-%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Tue, 02 May 2023 22:13:26 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/git-%E6%8C%87%E4%BB%A4/</guid>
+      <description>&lt;h2 id=&#34;git-add&#34;&gt;git add&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 添加工作区一个或多个文件的修改到暂存区&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;filename &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; pattern&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 将所有修改加入暂存区&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 撤回文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git rm --cached &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;file&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-commit&#34;&gt;git commit&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 提交暂存区内容到本地仓库的当前分支&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s1&#34;&gt;&amp;#39;注释内容&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-log&#34;&gt;git log&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;option&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# --all: 显示所有分支&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# --(pretty=)oneline: 将提交信息显示为一行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# --graph: 以图的形式显示&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;多屏显示控制方式：空格向下翻页，b 向上翻页，q 退出&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>单例模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 02 May 2023 00:19:42 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Singleton Pattern: Ensure a class has only one instance, and provide a global point of access to it.&lt;/p&gt;
+&lt;p&gt;单例模式：确保一个类只有一个实例，并提供一个全局访问点来访问这个唯一实例。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;优缺点和使用场景&#34;&gt;优缺点和使用场景&lt;/h2&gt;
+&lt;p&gt;单例模式的优点主要如下：&lt;/p&gt;
+&lt;p&gt;（1）单例模式提供了对唯一实例的受控访问。 因为单例类封装了它的唯一实例，所以它可以严格控制客户怎样以及何时访问它。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>原型模式</title>
+      <link>https://note-site.pages.dev/posts/design-pattern/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 01 May 2023 00:19:00 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/design-pattern/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Prototype Pattern: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.&lt;/p&gt;
+&lt;p&gt;原型模式：使用原型实例指定待创建对象的类型，并且通过复制这个原型来创建新的对象。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;原型模式是一种创建型设计模式，它允许使用者通过复制现有对象来创建新的对象。这种模式既可以避免直接创建对象开销大，又可以提高系统性能。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Viper</title>
+      <link>https://note-site.pages.dev/posts/go/lib/viper/</link>
+      <pubDate>Sun, 30 Apr 2023 14:57:26 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/viper/</guid>
+      <description>&lt;p&gt;Viper 是一个用于 Go 语言开发的配置处理库，它可以处理几乎所有格式的配置。Viper 支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置默认值&lt;/li&gt;
+&lt;li&gt;读取 JSON、TOML、YAML、HCL、.env 和 .properties 配置文件&lt;/li&gt;
+&lt;li&gt;从环境变量、命令行和 &lt;code&gt;io.Reader&lt;/code&gt; 读取配置&lt;/li&gt;
+&lt;li&gt;从远程配置中心（例如 Consul）读取配置并监听修改&lt;/li&gt;
+&lt;li&gt;监听配置文件修改和自动重新加载配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;快速使用&#34;&gt;快速使用&lt;/h2&gt;
+&lt;p&gt;安装：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spring 接口限流</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/spring-%E6%8E%A5%E5%8F%A3%E9%99%90%E6%B5%81/</link>
+      <pubDate>Fri, 28 Apr 2023 21:10:56 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/spring-%E6%8E%A5%E5%8F%A3%E9%99%90%E6%B5%81/</guid>
+      <description>&lt;p&gt;Spring 接口限流是指在高并发场景下，对接口进行限制访问次数的一种技术手段。通过限制接口的访问速度和频率，可以保护系统不受到突发流量的冲击，防止系统崩溃或者性能下降。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Homedir</title>
+      <link>https://note-site.pages.dev/posts/go/lib/homedir/</link>
+      <pubDate>Thu, 27 Apr 2023 22:09:11 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/homedir/</guid>
+      <description>&lt;p&gt;homedir 是一个不借助 cgo 获取用户目录的 go 库。&lt;/p&gt;
+&lt;p&gt;使用 go 内置的 &lt;code&gt;os/user&lt;/code&gt; 也可以获取用户目录，但是在 Darwin 系统中需要使用 cgo，这意味着任何使用了 &lt;code&gt;os/user&lt;/code&gt; 的 go 代码都不能交叉编译。但是大多数时候使用 &lt;code&gt;os/user&lt;/code&gt; 都只是为了获取用户目录。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Colly</title>
+      <link>https://note-site.pages.dev/posts/go/lib/colly/</link>
+      <pubDate>Thu, 27 Apr 2023 00:42:58 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/colly/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gocolly/colly&#34;&gt;&lt;code&gt;colly&lt;/code&gt;&lt;/a&gt; 是用 Go 语言编写的功能强大的爬虫框架。它提供简洁的 API，拥有强劲的性能，可以自动处理 cookie&amp;amp;session，还有提供灵活的扩展机制。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pie</title>
+      <link>https://note-site.pages.dev/posts/go/lib/pie/</link>
+      <pubDate>Tue, 25 Apr 2023 23:32:27 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/pie/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/elliotchance/pie&#34;&gt;pie&lt;/a&gt; 封装了&lt;strong&gt;对切片和 map 的常用操作,能满足工作中的大部分需求&lt;/strong&gt;。比如计算切片的交集、差集；对切片中元素按条件过滤的 Filter 函数；对切片中元素进行数据转换的 Each、Map 函数等。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Singleflight</title>
+      <link>https://note-site.pages.dev/posts/go/lib/singleflight/</link>
+      <pubDate>Tue, 25 Apr 2023 15:23:16 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/singleflight/</guid>
+      <description>&lt;p&gt;&lt;code&gt;singleflight&lt;/code&gt; 来源于准官方库 &lt;code&gt;golang.org/x/sync/singleflight&lt;/code&gt;，能够抑制对下游的多次重复请求。主要提供了以下三个方法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Do():  相同的 key，fn 同时只会执行一次，返回执行的结果给 fn 执行期间，所有使用该 key 的调用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// v: fn 返回的数据&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// err: fn 返回的err&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// shared: 表示返回数据是调用 fn 得到的还是其他相同 key 调用返回的&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Do&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{},&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{},&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;err&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;shared&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// DoChan(): 类似 Do() 方法，以 chan 返回结果&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;DoChan&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{},&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;chan&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Result&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Forget(): 失效 key，后续对此 key 的调用将执行 fn，而不是等待前面的调用完成&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Forget&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;&amp;#34;context&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;&amp;#34;golang.org/x/sync/singleflight&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;&amp;#34;sync/atomic&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Result&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;find&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ctx&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Context&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;query&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Sprintf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;result for %q&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)),&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;singleflight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kd&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;waited&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int32&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;done&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;make&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;chan&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;https://weibo.com/1227368500/H3GIgngon&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;k&#34;&gt;go&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;nx&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;shared&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Do&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{},&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;				&lt;span class=&#34;nx&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;err&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;find&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;				&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;err&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;atomic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;AddInt32&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;waited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;				&lt;span class=&#34;nb&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;index: %d, val: %v, shared: %v\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;}(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Second&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Do hangs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出结果如下：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

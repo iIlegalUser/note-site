@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Port on Note</title>
+    <link>https://note-site.pages.dev/tags/port/</link>
+    <description>Recent content in Port on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 29 Sep 2023 19:43:04 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/port/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见服务默认端口号</title>
+      <link>https://note-site.pages.dev/posts/linux/%E5%B8%B8%E8%A7%81%E6%9C%8D%E5%8A%A1%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%E5%8F%B7/</link>
+      <pubDate>Fri, 29 Sep 2023 19:43:04 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/linux/%E5%B8%B8%E8%A7%81%E6%9C%8D%E5%8A%A1%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%E5%8F%B7/</guid>
+      <description>&lt;p&gt;0 - 1023 之间的端口号被称作 Well Konwn Ports，由 IANA 分配管理，1024 及以上的端口号可以被其它应用程序使用。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Port&lt;/th&gt;
+          &lt;th&gt;Service&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1080&lt;/td&gt;
+          &lt;td&gt;Socks 代理&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1313&lt;/td&gt;
+          &lt;td&gt;Hugo&lt;/td&gt;
+          &lt;td&gt;静态网站生成器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1521&lt;/td&gt;
+          &lt;td&gt;Oracle 数据库监听端口&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2049&lt;/td&gt;
+          &lt;td&gt;NFS&lt;/td&gt;
+          &lt;td&gt;网络文件系统&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2181&lt;/td&gt;
+          &lt;td&gt;Apache Zookeeper&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2375&lt;/td&gt;
+          &lt;td&gt;Docker REST API (HTTP)&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2376&lt;/td&gt;
+          &lt;td&gt;Docker REST API (HTTPS)&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3000&lt;/td&gt;
+          &lt;td&gt;Grafana&lt;/td&gt;
+          &lt;td&gt;监控可视化平台&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3306&lt;/td&gt;
+          &lt;td&gt;MySQL&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4200&lt;/td&gt;
+          &lt;td&gt;AngularJS&lt;/td&gt;
+          &lt;td&gt;JS 应用设计框架&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5244&lt;/td&gt;
+          &lt;td&gt;AList&lt;/td&gt;
+          &lt;td&gt;支持多种存储的文件列表程序&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5432&lt;/td&gt;
+          &lt;td&gt;PostgreSQL&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5901&lt;/td&gt;
+          &lt;td&gt;VNC&lt;/td&gt;
+          &lt;td&gt;远程桌面控制&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6000&lt;/td&gt;
+          &lt;td&gt;X11&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6379&lt;/td&gt;
+          &lt;td&gt;Redis&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8080&lt;/td&gt;
+          &lt;td&gt;Jenkins&lt;/td&gt;
+          &lt;td&gt;CI 工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8848&lt;/td&gt;
+          &lt;td&gt;Nacos&lt;/td&gt;
+          &lt;td&gt;注册中心、配置中心&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8888&lt;/td&gt;
+          &lt;td&gt;Jupyter Notebook&lt;br&gt;宝塔面板&lt;/td&gt;
+          &lt;td&gt;交互式笔记本&lt;br&gt;服务器运维面板&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9000&lt;/td&gt;
+          &lt;td&gt;Portainer&lt;/td&gt;
+          &lt;td&gt;Docker 图形化工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25565&lt;/td&gt;
+          &lt;td&gt;我的世界&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27017&lt;/td&gt;
+          &lt;td&gt;MongoDB&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://matt-rickard.com/de-facto-ports&#34;&gt;De Facto Ports&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

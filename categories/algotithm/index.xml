@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Algotithm on Note</title>
+    <link>https://note-site.pages.dev/categories/algotithm/</link>
+    <description>Recent content in Algotithm on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 22 Oct 2023 10:50:47 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/categories/algotithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>并查集</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link>
+      <pubDate>Sun, 22 Oct 2023 10:50:47 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid>
+      <description>&lt;p&gt;并查集（Disjoint Set Union）是一种用于管理元素所属集合的数据结构，实现为一个森林，其中每棵树表示一个集合，树中的节点表示对应集合中的元素。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

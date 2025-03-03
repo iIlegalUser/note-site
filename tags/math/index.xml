@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Math on Note</title>
+    <link>https://note-site.pages.dev/tags/math/</link>
+    <description>Recent content in Math on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 03 Sep 2023 11:20:41 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>费马小定理</title>
+      <link>https://note-site.pages.dev/posts/algorithm/%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sun, 03 Sep 2023 11:20:41 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/algorithm/%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;逆元&#34;&gt;逆元&lt;/h2&gt;
+&lt;p&gt;逆元通常是用来解决除法求模问题的，求模运算有以下法则：&lt;/p&gt;
+$$
+\begin{cases}
+(a+b)\%c&amp;=&amp;(a\%c+b\%c)\%c\quad &amp;加法法则\\[1ex]
+(a-b)\%c&amp;=&amp;(a\%c-b\%c)\%c\quad &amp;减法法则\\[1ex]
+(a*b)\%c&amp;=&amp;(a\%c*b\%c)\%c\quad &amp;乘法法则
+\end{cases}
+$$&lt;p&gt;
+可以发现，除法求模没有相应的法则。当计算 $\cfrac{a}{b}\%c$ 时，如果 $a$，$b$ 很大，不能在计算完之后取模，可以通过变换将除法变为乘法，然后就可以通过上面的公式取模了。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Go on Note</title>
+    <link>https://note-site.pages.dev/categories/go/</link>
+    <description>Recent content in Go on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 05 Jun 2023 11:30:01 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文件类型识别</title>
+      <link>https://note-site.pages.dev/posts/go/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Mon, 05 Jun 2023 11:30:01 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/</guid>
+      <description>&lt;p&gt;文件类型识别是指根据文件的二进制数据判断文件的类型。以下是几种常见的文件类型识别方法：文件类型识别是在很多应用场景都需要用到的功能，比如在Web开发中，通常需要根据上传文件的类型进行不同的处理；在文件管理系统中，对不同文件类型展示不同的图标和操作等。文件类型识别的方法通常有以下几种：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

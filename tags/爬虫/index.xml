@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>爬虫 on Note</title>
+    <link>https://note-site.pages.dev/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 27 Apr 2023 00:42:58 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colly</title>
+      <link>https://note-site.pages.dev/posts/go/lib/colly/</link>
+      <pubDate>Thu, 27 Apr 2023 00:42:58 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/go/lib/colly/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gocolly/colly&#34;&gt;&lt;code&gt;colly&lt;/code&gt;&lt;/a&gt; 是用 Go 语言编写的功能强大的爬虫框架。它提供简洁的 API，拥有强劲的性能，可以自动处理 cookie&amp;amp;session，还有提供灵活的扩展机制。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

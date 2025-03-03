@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sublime Text on Note</title>
+    <link>https://note-site.pages.dev/tags/sublime-text/</link>
+    <description>Recent content in Sublime Text on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 02 Nov 2024 17:06:39 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sublime Text 4 Build 4180 激活</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/</link>
+      <pubDate>Sat, 02 Nov 2024 17:06:39 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/</guid>
+      <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;官网： &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;https://www.sublimetext.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;下载地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://download.sublimetext.com/sublime_text_build_4180_x64_setup.exe&#34;&gt;https://download.sublimetext.com/sublime_text_build_4180_x64_setup.exe&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;激活&#34;&gt;激活&lt;/h2&gt;
+&lt;p&gt;安装之后，使用sublime text 打开安装目录下的sublime_text.exe文件。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Ctrl + F&lt;/code&gt; 搜索&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;8079 0500 0f94 c2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更改为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c641 0501 b200 90
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://note-site.pages.dev/posts/miscellaneous/sublime-text-4-build-4180-%E6%BF%80%E6%B4%BB/assets/1.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;另存到其他路径，然后关闭 sublime text，替换原 sublime_text.exe 即可。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

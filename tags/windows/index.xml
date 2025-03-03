@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows on Note</title>
+    <link>https://note-site.pages.dev/tags/windows/</link>
+    <description>Recent content in Windows on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 09 Sep 2023 14:20:00 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Terminal 美化</title>
+      <link>https://note-site.pages.dev/posts/windows/terminal-beautify/</link>
+      <pubDate>Sat, 09 Sep 2023 14:20:00 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/windows/terminal-beautify/</guid>
+      <description>&lt;h2 id=&#34;安装-scoop&#34;&gt;安装 Scoop&lt;/h2&gt;
+&lt;p&gt;见 &lt;a href=&#34;../scoop&#34;&gt;Windows 下的包管理器：Scoop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装 terminal 使用的字体，推荐使用 JetBrainsMono-NF。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;scoop&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-k&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;JetBrainsMono-NF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-powershell-7&#34;&gt;安装 Powershell 7&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop install pwsh -k
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装并配置-on-my-posh&#34;&gt;安装并配置 on-my-posh&lt;/h2&gt;
+&lt;p&gt;PowerShell 7 自带 PSReadLine，在 PowerShell 5 上需要自己安装，可以通过 &lt;code&gt;$PSVersionTable&lt;/code&gt; 命令查看当前 PowerShell 版本。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows 下的包管理器：Scoop</title>
+      <link>https://note-site.pages.dev/posts/windows/scoop/</link>
+      <pubDate>Wed, 03 May 2023 15:28:08 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/windows/scoop/</guid>
+      <description>&lt;p&gt;Scoop 是一个 Windows 下的命令行安装程序，它可以帮助用户轻松地安装、卸载和管理命令行工具和应用程序。Scoop 的设计理念是使得软件的安装和管理过程更加简单、快速和可靠。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

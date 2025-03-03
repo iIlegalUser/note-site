@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://note-site.pages.dev/sitemap.xml

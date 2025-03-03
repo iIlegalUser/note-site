@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Spring on Note</title>
+    <link>https://note-site.pages.dev/tags/spring/</link>
+    <description>Recent content in Spring on Note</description>
+    <image>
+      <title>Note</title>
+      <url>https://note-site.pages.dev/opengraph.webp</url>
+      <link>https://note-site.pages.dev/opengraph.webp</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 28 Apr 2023 21:10:56 +0800</lastBuildDate>
+    <atom:link href="https://note-site.pages.dev/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring 接口限流</title>
+      <link>https://note-site.pages.dev/posts/miscellaneous/spring-%E6%8E%A5%E5%8F%A3%E9%99%90%E6%B5%81/</link>
+      <pubDate>Fri, 28 Apr 2023 21:10:56 +0800</pubDate>
+      <guid>https://note-site.pages.dev/posts/miscellaneous/spring-%E6%8E%A5%E5%8F%A3%E9%99%90%E6%B5%81/</guid>
+      <description>&lt;p&gt;Spring 接口限流是指在高并发场景下，对接口进行限制访问次数的一种技术手段。通过限制接口的访问速度和频率，可以保护系统不受到突发流量的冲击，防止系统崩溃或者性能下降。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
