@@ -57,6 +57,14 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}"
+      - name: Process public directory
+        run: |
+          # 创建新目录并复制内容，解引用符号链接
+          mkdir -p deploy-public
+          cp -Lr ./public/. ./deploy-public/
+          # 替换原public目录
+          rm -rf public
+          mv deploy-public public
       - name: Check public directory
         run: |
           echo "Checking for symlinks:"
