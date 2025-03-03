@@ -54,27 +54,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}"
-      - name: Process public directory
-        run: |
-          # 创建新目录并复制内容，解引用符号链接
-          mkdir -p deploy-public
-          cp -Lr ./public/. ./deploy-public/
-          # 替换原public目录
-          rm -rf public
-          mv deploy-public public
-      - name: Check public directory
-        run: |
-          echo "Checking for symlinks:"
-          find ./public -type l || echo "No symlinks found"
-          echo "Checking for hard links:"
-          find ./public -type f -links +1 || echo "No hard links found"
-          echo "Setting permissions:"
-          chmod -R 755 ./public
-          echo "Checking size:"
-          du -sh ./public
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -91,4 +71,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
