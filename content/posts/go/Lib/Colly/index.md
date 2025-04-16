@@ -7,7 +7,7 @@ series: []
 tags: ["爬虫"]
 
 cover:
-  image: "/cover/048.webp"
+  image: "/cover/002.webp"
   alt: "cover"
   relative: true
 ---

@@ -40,7 +40,7 @@ public abstract class Command {
 
 // 调用者
 public class Invoker {
-  private Conmmand command;
+  private Command command;
   
   public Invoker(Conmmand command) {
     this.command = command;
