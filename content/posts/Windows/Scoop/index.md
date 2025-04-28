@@ -267,4 +267,4 @@ scoop cache rm *
 
 [1] [Scoop - 最好用的 Windows 包管理器](https://p3terx.com/archives/scoop-the-best-windows-package-manager.html) 
 
-[2] [使用 Scoop 管理 Windows 下的软件和开发环境](https://dejavu.moe/posts/windows-scoop/) 
+[2] [使用 Scoop 管理 Windows 下的软件和开发环境](https://blog.dejavu.moe/posts/windows-scoop/) 
