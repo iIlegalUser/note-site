@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://note-site.pages.dev/</loc>
+    <lastmod>2024-11-28T17:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://note-site.pages.dev/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://note-site.pages.dev/"
+                />
+  </url><url>
+    <loc>https://note-site.pages.dev/posts/</loc>
+    <lastmod>2024-11-28T17:22:26+08:00</lastmod>
+  </url><url>
     <loc>https://note-site.pages.dev/categories/</loc>
     <lastmod>2024-11-08T20:14:46+08:00</lastmod>
     <xhtml:link
@@ -19,22 +35,6 @@
     <lastmod>2024-11-08T20:14:46+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/posts/java/java-%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/</loc>
-    <lastmod>2024-11-08T20:14:46+08:00</lastmod>
-  </url><url>
-    <loc>https://note-site.pages.dev/</loc>
-    <lastmod>2024-11-08T20:14:46+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://note-site.pages.dev/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://note-site.pages.dev/"
-                />
-  </url><url>
-    <loc>https://note-site.pages.dev/posts/</loc>
     <lastmod>2024-11-08T20:14:46+08:00</lastmod>
   </url><url>
     <loc>https://note-site.pages.dev/tags/</loc>
