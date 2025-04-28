@@ -18,7 +18,7 @@
       <link>https://note-site.pages.dev/posts/java/java-%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/</link>
       <pubDate>Fri, 08 Nov 2024 20:14:46 +0800</pubDate>
       <guid>https://note-site.pages.dev/posts/java/java-%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/</guid>
-      <description>&lt;h2 id=&#34;一元数据metadata&#34;&gt;一、元数据metadata&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;一元数据-metadata&#34;&gt;一、元数据 metadata&lt;/h2&gt;
 &lt;p&gt;元数据是指用来描述数据的数据，更通俗一点，就是描述代码间关系，或者代码与其他资源（例如数据库表）之间内在联系的数据。&lt;/p&gt;
 &lt;p&gt;基于元数据的广泛应用，JDK5.0 引入了 &lt;code&gt;Annotation&lt;/code&gt; 的概念来描述元数据。在 Java 中，元数据以标签的形式存在于 Java 代码中，元数据标签的存在并不影响程序代码的编译和执行。&lt;/p&gt;</description>
     </item>
