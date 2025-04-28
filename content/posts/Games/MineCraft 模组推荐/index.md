@@ -1,10 +1,8 @@
 ---
-title: "MineCraft 模组推荐"
-date: "2024-11-04T19:10:45+08:00"
-
-categories: []
-tags: []
-
+title: MineCraft 模组推荐
+date: 2024-11-04T19:10:45+08:00
+categories: 
+tags: 
 math: false
 mermaid: false
 draft: false
@@ -22,4 +20,3 @@ draft: false
 | JEI 物品管理器 |                   Just Enough Items                   |                                |                         |
 |   祛魔编辑台   |               Disenchantment Edit Table               | 分离装备或附魔书上的附魔       |                         |
 |    鞘翅插槽    |                      Elytra Slot                      | 添加鞘翅插槽，可以同时装备盔甲 |                         |
-

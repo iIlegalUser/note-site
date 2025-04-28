@@ -14,4 +14,3 @@ cover:
     alt: "cover"
     relative: true
 ---
-
