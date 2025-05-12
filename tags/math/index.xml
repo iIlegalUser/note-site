@@ -9,7 +9,7 @@
       <url>https://note-site.pages.dev/opengraph.webp</url>
       <link>https://note-site.pages.dev/opengraph.webp</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 03 Sep 2023 11:20:41 +0800</lastBuildDate>
     <atom:link href="https://note-site.pages.dev/tags/math/index.xml" rel="self" type="application/rss+xml" />
@@ -26,8 +26,7 @@ $$
 (a-b)\%c&amp;=&amp;(a\%c-b\%c)\%c\quad &amp;减法法则\\[1ex]
 (a*b)\%c&amp;=&amp;(a\%c*b\%c)\%c\quad &amp;乘法法则
 \end{cases}
-$$&lt;p&gt;
-可以发现，除法求模没有相应的法则。当计算 $\cfrac{a}{b}\%c$ 时，如果 $a$，$b$ 很大，不能在计算完之后取模，可以通过变换将除法变为乘法，然后就可以通过上面的公式取模了。&lt;/p&gt;</description>
+$$&lt;p&gt;可以发现，除法求模没有相应的法则。当计算 $\cfrac{a}{b}\%c$ 时，如果 $a$，$b$ 很大，不能在计算完之后取模，可以通过变换将除法变为乘法，然后就可以通过上面的公式取模了。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
