@@ -153,5 +153,4 @@ Windows Registry Editor Version 5.00
 
 [3] [Win11下安装PSReadLine终端自动补全](https://blog.csdn.net/m0_61544935/article/details/127474944) 
 
-{{< attachments title="附件" pattern=".*" />}}
-
+{{< attachments title=" 附件 " pattern=".*" />}}
