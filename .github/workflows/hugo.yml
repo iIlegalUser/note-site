@@ -16,7 +16,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main branch
+      - name: Checkout master branch
         uses: actions/checkout@v4
         with:
           submodules: false  # 如果你的主题是Git子模块，需要设置为 true
@@ -40,15 +40,15 @@ jobs:
           BASE_URL=""
           if [[ "$REPO_NAME" == "$OWNER.github.io" ]]; then
             BASE_URL="https://$OWNER.github.io/"
-            echo "Deploying to User/Organization Pages. Setting publish_branch to 'main'."
-            echo "PUBLISH_BRANCH=main" >> $GITHUB_ENV # 设置部署分支为 'main'
+            echo "Deploying to User/Organization Pages. Setting publish_branch to 'master'."
+            echo "PUBLISH_BRANCH=master" >> $GITHUB_ENV # 设置部署分支为 'master'
           else
             BASE_URL="https://$OWNER.github.io/$REPO_NAME/"
             echo "Deploying to Project Pages. Setting publish_branch to 'gh-pages'."
             echo "PUBLISH_BRANCH=gh-pages" >> $GITHUB_ENV # 设置部署分支为 'gh-pages'
           fi
           
-          hugo
+          hugo --minify --baseURL "$BASE_URL"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
