@@ -1,29 +1,62 @@
-name: Deploy Hugo Site
+name: Deploy Hugo site to GitHub Pages
 
 on:
+  # 当推送到 'master' 分支时触发此工作流
   push:
     branches:
       - master
+  # 允许手动触发工作流
+  workflow_dispatch:
+
+# 设置权限，允许工作流向 gh-pages 分支写入内容
+permissions:
+  contents: write
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          submodules: false  # 如果你的主题是Git子模块，需要设置为 true
+          fetch-depth: 0    # 获取所有历史记录，以便Hugo可以获取Git信息（可选）
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
-          extended: true
+          hugo-version: 'latest' # 指定Hugo版本，也可以使用 '0.120.4' 等具体版本
+          extended: true         # 如果你的主题使用了Sass/SCSS，需要设置为 true
 
-      - name: Build site
-        run: hugo --minify
+      - name: Build Hugo site
+        run: |
+          # 获取仓库名和所有者
+          REPO_NAME="${{ github.event.repository.name }}"
+          OWNER="${{ github.repository_owner }}"
+          
+          # 根据仓库类型动态设置 baseURL
+          # 如果仓库名为 <owner>.github.io，则为用户/组织页面
+          # 否则为项目页面
+          BASE_URL=""
+          if [[ "$REPO_NAME" == "$OWNER.github.io" ]]; then
+            BASE_URL="https://$OWNER.github.io/"
+            echo "Deploying to User/Organization Pages. Setting publish_branch to 'main'."
+            echo "PUBLISH_BRANCH=main" >> $GITHUB_ENV # 设置部署分支为 'main'
+          else
+            BASE_URL="https://$OWNER.github.io/$REPO_NAME/"
+            echo "Deploying to Project Pages. Setting publish_branch to 'gh-pages'."
+            echo "PUBLISH_BRANCH=gh-pages" >> $GITHUB_ENV # 设置部署分支为 'gh-pages'
+          fi
+          
+          echo "Building Hugo site with baseURL: $BASE_URL"
+          hugo --minify --baseURL "$BASE_URL"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
+        # 仅当推送到 'master' 分支时才进行部署，避免在PR或其他分支上部署
+        if: github.ref == 'refs/heads/master' 
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub提供自动生成的Token
+          publish_dir: ./public                   # Hugo默认的构建输出目录
+          publish_branch: ${{ env.PUBLISH_BRANCH }} # 使用上一步设置的动态部署分支
+          force_orphan: true                      # 强制创建或覆盖部署分支，推荐用于干净部署
