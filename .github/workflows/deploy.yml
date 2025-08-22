@@ -47,7 +47,7 @@ jobs:
             echo "Deploying to Project Pages. Setting publish_branch to 'gh-pages'."
             echo "PUBLISH_BRANCH=gh-pages" >> $GITHUB_ENV # 设置部署分支为 'gh-pages'
           fi
-          
+          echo "$BASE_URL"
           hugo --minify --baseURL "$BASE_URL"
 
       - name: Deploy to GitHub Pages
