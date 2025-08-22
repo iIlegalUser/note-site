@@ -48,8 +48,8 @@ jobs:
             echo "PUBLISH_BRANCH=gh-pages" >> $GITHUB_ENV # 设置部署分支为 'gh-pages'
           fi
           
-          echo "Building Hugo site with baseURL: $BASE_URL"
-          hugo --minify --baseURL "$BASE_URL"
+          echo "Building Hugo site with baseURL: $BASE_URL server"
+          hugo server
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
