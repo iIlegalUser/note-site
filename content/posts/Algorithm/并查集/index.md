@@ -2,7 +2,7 @@
 title: "并查集"
 date: 2023-10-22T10:50:47+08:00
 
-categories: ["Algotithm"]
+categories: ["Algorithm"]
 tags: ["Struct"]
 
 math: true
