@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://iIlegalUser.github.io/note-site/sitemap.xml
